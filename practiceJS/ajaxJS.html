@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+
+<body>
+    <script>
+        {
+            const uuid = xxxxx
+            const token = xxxxx
+            const url = `https://course-ec-api.hexschool.io/api/${uuid}/admin/ec/product`
+
+            let headers = {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Authorization": `Bearer ${token}`,
+            }
+
+            //以下是API文件中提及必寫的主體参數。而以下這個產品資料是六角學院提供的。
+            let body = {
+                "title": "Abysswalker",
+                "category": "T-Shirts",
+                "content": "Its wearer, like Artorias himself, can traverse the Abyss.",
+                "description": "This official Dark Souls shirt was designed by Nina Matsumoto and printed on soft 100% cotton shirts by Forward. Each one comes with a bonus sticker.",
+                "imageUrl": ["https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"]
+            }
+
+            fetch(url, {
+                    method: "POST",
+                    headers: headers,
+                    //別忘了把主體参數轉成字串，否則資料會變成[object Object]，它無法被成功儲存在後台
+                    body: JSON.stringify(body)
+                })
+                .then(response => response.json())
+                .then(json => console.log(json));
+        } {
+            const uuid = xxxxx
+            const token = xxxxx
+            const url = `https://course-ec-api.hexschool.io/api/${uuid}/admin/ec/products`
+
+            let headers = {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Authorization": `Bearer ${token}`,
+            }
+
+            fetch(url, {
+                    method: "GET",
+                    headers: headers,
+                })
+                .then((response) => response.json())
+                .then((json) => console.log(json));
+        }
+    </script>
+</body>
+
+</html>

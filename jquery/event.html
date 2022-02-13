@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+<a href="javascript:;">Button</a>
+<script src="/js/JQuery.js"></script>
+<script>
+    //新增事件
+    $('a').click(function() {
+        alert('AAA Click');
+    })
+    document.querySelector('a').onclick = function() {
+        console.log('AAA CLICK');
+    }
+
+    let baby = function() {
+        console.log('AAA CLICK');
+    }
+
+    $('a').on('click', hand)
+    document.querySelector('a').addEventListener('click', baby)
+
+    //移除事件off
+</script>
+<div id="container">
+    <a href="javascript:;">Button</a>
+    <a href="javascript:;">Button</a>
+    <a href="javascript:;">Button</a>
+    <a href="javascript:;">Button</a>
+    <a href="javascript:;">Button</a>
+</div>
+<script>
+    //確定有動態生成時用 
+    //耗效能
+    let handler = function() {
+        console.log('AAA CLICK');
+    }
+    $('#contain>a').on('click', 'a', handler)
+</script>
+</body>
+
+</html>

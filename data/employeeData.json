@@ -1,0 +1,27 @@
+{
+    "employeeTable": [{
+            "employeeID": "1",
+            "employeeName": "小王",
+            "year": "18",
+            "telephone": "09-00000000"
+        },
+        {
+            "employeeID": "2",
+            "employeeName": "老王",
+            "year": "45",
+            "telephone": "09-65875825"
+        },
+        {
+            "employeeID": "3",
+            "employeeName": "小四",
+            "year": "26",
+            "telephone": "09-15487735"
+        }, {
+            "employeeID": "4",
+            "employeeName": "小李",
+            "year": "32",
+            "telephone": "09-59865421"
+        }
+    ]
+
+}

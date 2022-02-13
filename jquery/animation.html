@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rect {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rect"></div>
+    <script src="/js/JQuery.js"></script>
+    <script>
+        (function() {
+
+            $('#rect').on('click', clickHandler)
+
+            function clickHandler() {
+                $(this).animate({
+                    top: 300,
+                    left: 800
+                }, {
+                    duration: 1000,
+                    specialEasing: {
+                        top: 'linear',
+                        left: 'swing'
+                    }
+                }).animate({
+                    top: 0,
+                    left: 0
+                }, {
+                    duration: 1000,
+                    specialEasing: {
+                        top: 'linear',
+                        left: 'swing'
+                    }
+                })
+            }
+
+            //簡易動畫
+            /*
+            function clickHandler() {
+                $(this).animate({
+                    top: 300,
+                    left: 800
+                }, 1000)//jquery動畫預設400ms
+            }
+            */
+            //JS做動畫
+            /*
+            document.querySelector('#rect').addEventListener('click', clickHandler)
+
+            function clickHandler() {
+                //this.style.left = '800px';
+                for (let i = 0; i <= 100; i++) {
+                    //計時器
+                    setTimeout(() => {
+                            this.style.left = 800 / 100 * i + 'px'
+                        }, i * 10)
+                        //requestAnimationFrame
+                }
+            }*/
+        })()
+    </script>
+</body>
+
+</html>

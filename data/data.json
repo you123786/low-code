@@ -1,24 +1,23 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "Alex"
-    },
-    {
-      "id": 2,
-      "name": "John"
-    },
-    {
-      "id": 3,
-      "name": "Mary"
-    },
-    {
-      "name": "superman",
-      "id": 4
-    },
-    {
-      "name": "sada",
-      "id": 5
-    }
-  ]
+    "users": [{
+            "id": 1,
+            "name": "Alex"
+        },
+        {
+            "id": 2,
+            "name": "John"
+        },
+        {
+            "id": 3,
+            "name": "Mary"
+        },
+        {
+            "name": "superman",
+            "id": 4
+        },
+        {
+            "name": "sada",
+            "id": 5
+        }
+    ]
 }

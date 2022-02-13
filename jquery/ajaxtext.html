@@ -95,6 +95,89 @@
             })
         })
     </script>
+    <script>
+        (function() {
+            /*
+            function first() {
+                console.log(1)
+            }
+
+            function second(callback) {
+                setTimeout(() => {
+                    console.log(2)
+                    callback()
+                }, 0)
+
+            }
+
+            function third() {
+                console.log(3)
+            }
+
+            first()
+            second(third)*/
+
+
+            function first() {
+                var def = $.Deferred()
+                console.log(1)
+                def.resolve('I am NO.1')
+
+                return def.promise()
+
+            }
+
+            function second(res) {
+                var def = $.Deferred()
+                console.log(res)
+                setTimeout(() => {
+                    console.log(2)
+                    def.reject('I am NO.2')
+                }, 0)
+
+
+                return def.promise()
+
+            }
+
+            function third() {
+                var def = $.Deferred()
+                console.log(3)
+                def.resolve() //或def.reject
+
+                return def.promise()
+
+            }
+
+            first().then(second).then(third).then(function() {
+                console.log('OK')
+            }, function(err) {
+                console.log('ERR:', err)
+            })
+
+
+
+            //$.ajax(url,options)
+            //$.ajax({
+            //  url,type,dataType,data,successCallback
+            //})
+            $.ajax({
+                url: '/data/apiln.json',
+                type: 'get', //get,post,put,delete
+                dataType: 'json', //html,xml,text,json 
+                data: {
+
+                }
+            }).then(function(res) {
+                console.log(res)
+                return def.resolve()
+            }, function(err) {
+                console.log(err)
+                return def.reject()
+            })
+
+        })
+    </script>
 </body>
 
 </html>
