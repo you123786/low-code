@@ -35,14 +35,14 @@
             background-color: bisque;
         }
         
-        .table>.tbody.tr {
+        .table>.tbody>.tr {
             display: flex;
         }
         
-        .table>.tbody.tr>.td {
+        .table>.tbody>.tr>.td {
             width: 100px;
             height: 100%;
-            margin-right: 5px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -53,6 +53,7 @@
             <div class="tr">
                 <div class="th" data-Field="employeeID">員工編號</div>
                 <div class="th" data-field="employeeName">員工姓名</div>
+                <div class="th" data-field="telephone">電話</div>
                 <div class="th" data-field="year">年紀</div>
             </div>
         </div>
@@ -66,8 +67,6 @@
     </div>
     <script>
         {
-
-            const employeeTable = document.querySelector('#employeeTable')
 
             function getFetch(url) {
 
@@ -88,26 +87,28 @@
             }
 
             function grid(uuid, tableName) {
-                const url = `http://localhost:3000/${uuid}`
-                const table = document.querySelector(`#${tableName}`);
-                const tbody = table.querySelector(`.tbody`).innerHTML = '';
+                let url = `http://localhost:3000/${uuid}`
+                let table = document.querySelector(`#${tableName}`);
+                let tbody = table.querySelector(`.tbody`);
 
-                const grid = getFetch(url).then(jsonData => {
-                    console.table(jsonData);
+                let grid = getFetch(url).then(jsonData => {
                     jsonData.forEach(data => {
-                        console.table(data);
-                        tbody.innerHTML += `<div class='tr'>`;
-                        let th = table.querySelectorAll('.thead>.tr>.th');
-                        th.forEach(th => {
-                            tbody.innerHTML += `<div class='td'>${data()}</div>`
-                            let dataField = th.dataset.field
-                        })
-                        tbody.innerHTML += `</div>`;
+                        function td() {
+                            let th = table.querySelectorAll('.thead>.tr>.th');
+                            let str = '';
+                            th.forEach(th => {
+                                console.log(th.dataset.field);
+                                str += `<div class='td'>${data[th.dataset.field]}</div>`;
+                            })
+                            return str;
+                        }
+
+                        tbody.innerHTML += `<div class='tr'>${td()}</div>`;
                     });
                 })
             }
 
-
+            grid('employeeTable', 'employeeTable');
 
         }
     </script>
