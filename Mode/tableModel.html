@@ -13,61 +13,140 @@
         }
         
         .table {
-            width: 600px;
+            background-color: White !important;
+            border: 1px solid #ccc !important;
+            border-spacing: 0;
+            margin-top: 0px;
+        }
+        
+        .table>.grid-thead>.grid-tr>.grid-td,
+        .table>.grid-tbody>.grid-tr>.grid-th {
             border-style: solid;
+            padding: .3rem .4rem;
         }
         
-        .table>.thead {
-            background-color: aqua;
+        .table>.grid-thead {
+            color: #fff;
+            font-weight: bold;
+            background: #006699;
+            cursor: default;
         }
         
-        .table>.thead>.tr {
+        .table>.grid-thead>.grid-tr {
+            display: flex;
+            margin: 0px;
+        }
+        
+        .table>.grid-thead>.grid-tr>.grid-th {
+            width: 100%;
+            margin: 0px;
+            padding: 1px 2px;
+            border-right: 1px solid white;
+        }
+        
+        .table>.grid-tbody {
+            background-color: white;
+        }
+        
+        .table>.grid-tbody>.grid-tr {
+            display: flex;
+            border: 1px solid #ccc;
+            margin: 0px;
+        }
+        
+        .table>.grid-tbody>.grid-tr>.grid-td {
+            width: 100%;
+            margin: 0px;
+            padding: 1px 2px;
+            border-right: 1px solid #ccc;
+        }
+    </style>
+    <style>
+        .table1 {
+            background-color: White !important;
+            border: 1px solid #ccc !important;
+            border-spacing: 0;
+            margin-top: 0px;
             display: flex;
         }
         
-        .table>.thead>.tr>.th {
-            width: 100px;
-            height: 100%;
-            margin: 5px;
+        .table1>.grid-thead>.grid-tr>.grid-td,
+        .table1>.grid-tbody>.grid-tr>.grid-th {
+            border-style: solid;
+            padding: .3rem .4rem;
         }
         
-        .table>.tbody {
-            background-color: bisque;
+        .table1>.grid-thead {
+            color: #fff;
+            font-weight: bold;
+            background: #006699;
+            cursor: default;
         }
         
-        .table>.tbody>.tr {
-            display: flex;
+        .table1>.grid-thead>.grid-tr {
+            margin: 0px;
         }
         
-        .table>.tbody>.tr>.td {
-            width: 100px;
-            height: 100%;
-            margin: 5px;
+        .table1>.grid-thead>.grid-tr>.grid-th {
+            width: 100%;
+            margin: 0px;
+            padding: 1px 2px;
+            border-right: 1px solid white;
+        }
+        
+        .table1>.grid-tbody {
+            background-color: white;
+        }
+        
+        .table1>.grid-tbody>.grid-tr {
+            border: 1px solid #ccc;
+            margin: 0px;
+        }
+        
+        .table1>.grid-tbody>.grid-tr>.grid-td {
+            width: 100%;
+            margin: 0px;
+            padding: 1px 2px;
+            border-right: 1px solid #ccc;
         }
     </style>
 </head>
 
 <body>
-    <div id="employeeTable" class="table">
-        <div class="thead">
-            <div class="tr">
-                <div class="th" data-Field="employeeID">員工編號</div>
-                <div class="th" data-field="employeeName">員工姓名</div>
-                <div class="th" data-field="telephone">電話</div>
-                <div class="th" data-field="year">年紀</div>
-            </div>
-        </div>
-        <div class="tbody">
-            <div class="tr">
-                <div class="tr"></div>
-                <div class="tr"></div>
-                <div class="tr"></div>
+    <button>全部刪除</button>
+    <div style="margin-top: 5px;">
+        <div id="employeeTable" data-selectAll="true" class="table">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="">選擇
+                        <checkbox></checkbox>
+                    </div>
+                    <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
+                    <div class="grid-th" data-field="employeeName">員工姓名</div>
+                    <div class="grid-th" data-field="year">年紀</div>
+                    <div class="grid-th" data-field="telephone">電話</div>
+                </div>
             </div>
         </div>
     </div>
+    <div style="margin-top: 50px;">
+        <div id="bodyTable" data-selectAll="true" class="table1">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="">選擇
+                        <checkbox></checkbox>
+                    </div>
+                    <div class="grid-th" data-field="size" data-key="">尺寸</div>
+                    <div class="grid-th" data-field="shouldQuantity">應製數量</div>
+                    <div class="grid-th" data-field="Completion">完工數</div>
+                    <div class="grid-th" data-field="Insufficient">欠數</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         {
-
             function getFetch(url) {
 
                 let headers = {
@@ -89,27 +168,27 @@
             function grid(uuid, tableName) {
                 let url = `http://localhost:3000/${uuid}`
                 let table = document.querySelector(`#${tableName}`);
-                let tbody = table.querySelector(`.tbody`);
 
-                let grid = getFetch(url).then(jsonData => {
+                getFetch(url).then(jsonData => {
+                    let tr = '';
                     jsonData.forEach(data => {
                         function td() {
-                            let th = table.querySelectorAll('.thead>.tr>.th');
-                            let str = '';
+                            let th = table.querySelectorAll('.grid-thead>.grid-tr>.grid-th');
+                            let tr = '';
                             th.forEach(th => {
-                                console.log(th.dataset.field);
-                                str += `<div class='td'>${data[th.dataset.field]}</div>`;
+                                tr += `<div class='grid-td'>${data[th.dataset.field]}</div>`;
                             })
-                            return str;
+                            return tr;
                         }
 
-                        tbody.innerHTML += `<div class='tr'>${td()}</div>`;
+                        tr += `<div class='grid-tr'>${td()}</div>`;
                     });
+                    table.innerHTML += `<div class='grid-tbody'>${tr}</div>`
                 })
             }
 
             grid('employeeTable', 'employeeTable');
-
+            grid('bodyTable', 'bodyTable');
         }
     </script>
 </body>
