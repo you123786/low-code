@@ -1,0 +1,529 @@
+@charset 'UTF-8';
+body {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+input {
+    display: inline-block;
+    border-color: Blue;
+    border-width: 1px;
+}
+
+.td {
+    background-color: #ddeeff;
+    border-right: solid 1px blue;
+    border-top: solid 1px blue;
+    border-bottom: solid 1px blue;
+    border-left: solid 1px blue;
+}
+
+.table {
+    /* background-color:#ddeeff;*/
+    border-right: solid 1px blue;
+    border-top: solid 1px blue;
+    border-bottom: solid 1px blue;
+    border-left: solid 1px blue;
+}
+
+.enlabel {}
+
+.chlabel {}
+
+a:link {
+    color: blue;
+    text-decoration: none
+}
+
+
+/* unvisited link */
+
+a:visited {
+    color: blue;
+    text-decoration: none
+}
+
+
+/* visited link */
+
+a:hover {
+    color: red;
+    text-decoration: none
+}
+
+
+/* mouse over link */
+
+a:active {
+    color: blue;
+    text-decoration: none
+}
+
+
+/* selected link */
+
+a:link {
+    text-decoration: none;
+    font-size: 10pt;
+    border-style: none
+}
+
+table {
+    color: #000;
+    text-decoration: none;
+    font-size: 10pt
+}
+
+a {
+    text-decoration: none;
+    font-size: 10pt;
+    color: #FF0000
+}
+
+body {
+    font-size: 11pt;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    /*scrollbar-face-color:#3399ff;
+    scrollbar-3dlight-color:#A0EAFF;
+    scrollbar-highlight-color:#66ccff;
+    scrollbar-shadow-color:#66ccff;
+    scrollbar-darkshadow-color:#66ccff;
+    scrollbar-arrow-color:#A0EAFF;
+    scrollbar-track-color:#A0EAFF*/
+}
+
+.article_title {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    FILTER: Glow(Color=#FF850E, Strength=1) DropShadow(Color=#FF850E, OffX=1, OffY=1, Positive=1);
+    COLOR: #ffffff;
+    LINE-HEIGHT: 120%
+}
+
+.menu10ptwhbo {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+
+.text_number {
+    TEXT-ALIGN: right
+}
+
+
+/*固定表頭*/
+
+.fixTitle {
+    POSITION: relative;
+    TOP: expression(this.offsetParent.scrollTop)
+}
+
+
+/*--Loading--*/
+
+.loadingCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.loadingCover>span {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.loadingCover>span img {
+    max-width: 80px;
+    margin-bottom: 5px;
+}
+
+.table-td-initial {
+    display: initial;
+}
+
+
+/*--Loading End--*/
+
+
+/*--NewERP Css--*/
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Microsoft JhengHei', 微軟正黑體, sans-serif !important;
+    font-size: .95rem !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a,
+a:link {
+    color: #0044e6;
+}
+
+a:hover {
+    color: #ff3535;
+}
+
+.font-color-333 {
+    color: #333;
+}
+
+.font-color-999 {
+    color: #999;
+}
+
+.font-color-red {
+    color: #e63f3f;
+}
+
+.elem-block {
+    display: block !important;
+}
+
+.elem-none {
+    display: none !important;
+}
+
+.contentBox {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.guideBox {
+    background: #eee !important;
+    color: #333;
+    padding: .5rem .8rem .5rem;
+    margin-bottom: .5rem;
+}
+
+.guideBox a[href],
+.guideBox a[href]:hover,
+.guideBox a,
+.guideBox a:hover {
+    color: #1751ba;
+    text-decoration: none;
+    cursor: default;
+}
+
+.btnBox {
+    margin-bottom: 10px;
+}
+
+.input-list {
+    margin-bottom: .5rem;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline-block-child>* {
+    display: inline-block;
+}
+
+.mr-5 {
+    margin-right: .5rem !important;
+}
+
+.ml-5 {
+    margin-left: .5rem !important;
+}
+
+.mt-5 {
+    margin-top: .5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: .5rem !important;
+}
+
+.pr-5 {
+    padding-right: .5rem !important;
+}
+
+.pl-5 {
+    padding-left: .5rem !important;
+}
+
+.pt-5 {
+    padding-top: .5rem !important;
+}
+
+.pb-5 {
+    padding-bottom: .5rem !important;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+ul.btnBox,
+ul.btnBox li {
+    color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+ul.btnBox-li-inline-block li {
+    display: inline-block;
+}
+
+.button,
+.radioList,
+.btnBox input[type=button],
+.btnBox input[type=submit] {
+    display: inline-block;
+    background-color: CornflowerBlue;
+    color: White;
+    border-width: 1px;
+    border-style: solid;
+    /*width: 80px;*/
+}
+
+input[type=button],
+input[type=submit] {
+    line-height: 1;
+    width: auto !important;
+    height: auto !important;
+    margin-right: .3rem;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, .2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.radioList:hover,
+.button:hover,
+.btnBox input[type=button]:hover,
+.btnBox input[type=submit]:hover {
+    color: #333;
+    background: rgb(255, 204, 102);
+}
+
+input[type=text][disabled=disabled],
+input[type=text][disabled=disabled]:hover,
+input[disabled=disabled],
+input[disabled=disabled]:hover,
+textarea[disabled=disabled],
+textarea[disabled=disabled]:hover {
+    color: #777;
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+input[type=button][disabled=disabled],
+input[type=submit][disabled=disabled]:hover,
+.button[disabled=disabled],
+.button[disabled=disabled]:hover,
+.radioList[disabled=disabled],
+.radioList[disabled=disabled]:hover .btnBox input[type=button][disabled=disabled],
+.btnBox input[type=submit][disabled=disabled],
+.btnBox input[type=button][disabled=disabled]:hover,
+.btnBox input[type=submit][disabled=disabled]:hover {
+    color: #777;
+    background-color: #e5e5e5;
+    cursor: not-allowed;
+}
+
+a.aspNetDisabled,
+a.aspNetDisabled:hover {
+    color: #777;
+}
+
+
+/*radio button*/
+
+.radStatus {
+    padding: .3rem;
+}
+
+.radioList {
+    border-width: 0;
+}
+
+input,
+textarea,
+select {
+    border-color: rgba(0, 0, 0, .3);
+    border-style: solid;
+    border-width: 1px;
+}
+
+input[type=date] {
+    border-color: #aaa;
+}
+
+input[type=image] {
+    border: 0;
+}
+
+.overflowBox {
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+.dataTable {
+    background-color: White !important;
+    border: 1px solid #ccc !important;
+    border-spacing: 0;
+    margin-top: 0px;
+}
+
+.dataTable>tr>td,
+.dataTable>tr>th,
+.dataTable>tbody>tr>td,
+.dataTable>tbody>tr>th {
+    border-style: solid;
+    padding: .3rem .4rem;
+}
+
+.dataTable.ItemLight tr:hover {
+    color: #333 !important;
+    background: rgb(208, 243, 255) !important;
+    cursor: pointer;
+}
+
+.dataTable.ItemLight tr.selected-item,
+.dataTable.ItemLight tr.selected-item:hover {
+    background: #ffd666 !important;
+    cursor: pointer;
+}
+
+.dataTable tr.selected-item-detail,
+.dataTable tr.selected-item-detail:hover {
+    background: #daffa3 !important;
+    cursor: pointer;
+}
+
+.dataTableHeader,
+.dataTable.ItemLight .dataTableHeader:hover {
+    color: #fff !important;
+    font-weight: bold !important;
+    background: #006699 !important;
+    cursor: default;
+}
+
+tr.dataTableHeader,
+th.dataTableHeader {
+    white-space: nowrap;
+}
+
+.dataTableHeader a {
+    text-decoration: underline;
+    color: #affaff;
+}
+
+.dataTableHeader a:hover {
+    text-decoration: underline;
+    color: #8CEDAD;
+}
+
+.dataTableHeader a {
+    text-decoration: underline;
+    color: #affaff;
+}
+
+.dataTable.selectItem-table .dataTableHeader a {
+    color: #0165ef;
+}
+
+.dataTable.selectItem-table .dataTableHeader a:hover {
+    color: #012aef;
+}
+
+.dataTable.excel-table .dataTableHeader a {
+    color: #FFF;
+}
+
+.dataTable.excel-table .dataTableHeader a:hover {
+    color: #affaff;
+}
+
+.dataTable.excel-table .dataTableHeader,
+.dataTable.excel-table.ItemLight .dataTableHeader:hover {
+    background: rgb(33, 115, 70) !important;
+}
+
+.dataTable.selectItem-table .dataTableHeader,
+.dataTable.selectItem-table.ItemLight .dataTableHeader:hover {
+    color: #333 !important;
+    background: #ddd !important;
+}
+
+tr.dataTableHeader.space-normal,
+th.dataTableHeader.space-normal {
+    white-space: normal;
+}
+
+.page-selectItem-title {
+    font-weight: bold;
+    font-size: 1.2rem !important;
+    text-align: center;
+    background-color: #3c66a6;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+/*需使用position: 絕對定位*/
+
+.alignCenterTable {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+}
+
+.pagingBox {
+    color: #333;
+    text-align: center;
+}
+
+.pagingBox a,
+.pagingBox a:link,
+.pagingBox a:hover {
+    color: #aaa;
+}
+
+.pagingBox a[href],
+.pagingBox a[href]:link {
+    color: #004eef;
+}
+
+.pagingBox a[href]:hover {
+    color: #ff4f4f;
+}
+
+#txtPageSize {
+    width: 2rem;
+}
+
+.showBoxShadow {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+}
+
+
+/*--NewERP Css--*/

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableExample</title>
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/gridModel.js"></script>
+    <style>
+        .table1 {
+            background-color: White !important;
+            border: 1px solid #ccc !important;
+            border-spacing: 0;
+            margin-top: 0px;
+            display: flex;
+        }
+        
+        .table1>.grid-thead>.grid-tr>.grid-td,
+        .table1>.grid-tbody>.grid-tr>.grid-th {
+            border-style: solid;
+            padding: .3rem .4rem;
+        }
+        
+        .table1>.grid-thead {
+            color: #fff;
+            font-weight: bold;
+            background: #006699;
+            cursor: default;
+        }
+        
+        .table1>.grid-thead>.grid-tr {
+            margin: 0px;
+        }
+        
+        .table1>.grid-thead>.grid-tr>.grid-th {
+            width: 100%;
+            margin: 0px;
+            padding: 1px 2px;
+            border-bottom: 1px solid white;
+        }
+        
+        .table1>.grid-tbody {
+            background-color: white;
+            display: flex;
+            flex-grow: 2;
+        }
+        
+        .table1>.grid-tbody>.grid-tr {
+            border: 1px solid #ccc;
+            margin: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .table1>.grid-tbody>.grid-tr>.grid-td {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <button>全部刪除</button>
+    <div style="margin-top: 5px;">
+        <div id="employeeTable" data-selectAll="true" class="normal-table">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="">選擇
+                        <checkbox></checkbox>
+                    </div>
+                    <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
+                    <div class="grid-th" data-field="employeeName">員工姓名</div>
+                    <div class="grid-th" data-field="year">年紀</div>
+                    <div class="grid-th" data-field="telephone">電話</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 50px;">
+        <div id="bodyTable" data-selectAll="true" class="table1">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="size" data-key="">尺寸</div>
+                    <div class="grid-th" data-field="need">應製數量</div>
+                    <div class="grid-th" data-field="finish">完工數</div>
+                    <div class="grid-th" data-field="owe">欠數</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        {
+            grid('http://localhost:3000/employeeTable', 'employeeTable');
+            grid('http://localhost:3000/bodyTable', 'bodyTable');
+        }
+    </script>
+</body>
+
+</html>

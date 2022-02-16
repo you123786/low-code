@@ -1,0 +1,46 @@
+.normal-table {
+  background-color: White !important;
+  border: 1px solid #ccc !important;
+  border-spacing: 0;
+  margin-top: 0px;
+}
+
+.normal-table > .grid-thead {
+  color: #fff;
+  font-weight: bold;
+  background: #006699;
+  cursor: default;
+}
+
+.normal-table > .grid-thead > .grid-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+
+.normal-table > .grid-thead > .grid-tr > .grid-th {
+  width: 100%;
+  margin: 0px;
+  padding: 1px 2px;
+  border-right: 1px solid white;
+}
+
+.normal-table > .grid-tbody {
+  background-color: white;
+}
+
+.normal-table > .grid-tbody > .grid-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ccc;
+  margin: 0px;
+}
+
+.normal-table > .grid-tbody > .grid-tr > .grid-td {
+  width: 100%;
+  margin: 0px;
+  padding: 1px 2px;
+  border-right: 1px solid #ccc;
+}
