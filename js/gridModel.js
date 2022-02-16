@@ -19,14 +19,30 @@ function getFetch(url) {
         });
 }
 
-function grid(url, tableName) {
-    let table = document.querySelector(`#${tableName}`);
+function postFetch(url, data) {
+
+    let headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+
+    return fetch(url, {
+        method: "POST",
+        headers: headers,
+        body: {
+            data
+        }
+    })
+}
+
+function getGrid(url, gridID) {
+    let grid = document.querySelector(`#${gridID}`);
 
     getFetch(url).then(jsonData => {
         let tr = '';
         jsonData.forEach(data => {
             function td() {
-                let th = table.querySelectorAll('.grid-thead>.grid-tr>.grid-th');
+                let th = grid.querySelectorAll('.grid-thead>.grid-tr>.grid-th');
                 let tr = '';
                 th.forEach(th => {
                     tr += `<div class='grid-td'>${data[th.dataset.field]}</div>`;
@@ -38,4 +54,12 @@ function grid(url, tableName) {
         });
         table.innerHTML += `<div class='grid-tbody'>${tr}</div>`
     })
+}
+
+function postRadio(url, radioName) {
+    let radio = document.querySelectorAll();
+    console.log(radio);
+    document.querySelector('')
+    let data = { "statue": `${radio}` };
+    postFetch(url, )
 }
