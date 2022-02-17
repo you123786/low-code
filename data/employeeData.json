@@ -1,6 +1,5 @@
 {
     "employeeTable": [{
-
             "employeeID": "1",
             "employeeName": "小王",
             "year": "18",
@@ -42,42 +41,50 @@
             "need": "17",
             "finish": "16",
             "owe": "1"
-        }, {
+        },
+        {
             "size": "25.5",
             "need": "30",
             "finish": "25",
             "owe": "5"
-        }, {
+        },
+        {
             "size": "26",
             "need": "56",
             "finish": "25",
             "owe": "31"
-        }, {
+        },
+        {
             "size": "26.5",
             "need": "66",
             "finish": "66",
             "owe": "0"
-        }, {
+        },
+        {
             "size": "27",
             "need": "72",
             "finish": "33",
             "owe": "39"
-        }, {
+        },
+        {
             "size": "27.5",
             "need": "56",
             "finish": "55",
             "owe": "1"
-        }, {
+        },
+        {
             "size": "28",
             "need": "23",
             "finish": "23",
             "owe": "0"
-        }, {
+        },
+        {
             "size": "28.5",
             "need": "17",
             "finish": "19",
             "owe": "-2"
-        }, {
+        },
+        {
             "size": "29",
             "need": "35",
             "finish": "14",
@@ -85,6 +92,6 @@
         }
     ],
     "status": {
-        "status": "0"
+        "status": "1"
     }
 }

@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>radioModel</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gridModel.css">
     <script src="../js/gridModel.js"></script>
 </head>
 
 <body>
     <div class="radioList radStatus">
-        <input type="radio" name="size" value="">已回饋
-        <input type="radio" name="size" value="3">已審核
-        <input type="radio" name="size" value="2" checked>新建
-        <input type="radio" name="size" value="">全部
+        <input type="radio" name="size" value="1">已回饋
+        <input type="radio" name="size" value="2">已審核
+        <input type="radio" name="size" value="3" checked>新建
+        <input type="radio" name="size" value="4">全部
     </div>
     <script>
         {
-
-            postRadio('url', 'radio');
-
+            document.querySelectorAll('[name=size]').forEach(input => input.addEventListener('change', onChange => {
+                postRadio('http://localhost:3000/employeeTable', 'size', 'employeeTable')
+            }));
+        }
+    </script>
+    <div style="margin-top: 5px;">
+        <div id="employeeTable" data-selectAll="true" class="row-grid">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="">選擇
+                        <checkbox></checkbox>
+                    </div>
+                    <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
+                    <div class="grid-th" data-field="employeeName">員工姓名</div>
+                    <div class="grid-th" data-field="year">年紀</div>
+                    <div class="grid-th" data-field="telephone">電話</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        {
+            postRadio('http://localhost:3000/employeeTable', 'size', 'employeeTable');
         }
     </script>
 </body>

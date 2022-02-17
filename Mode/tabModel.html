@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabModel</title>
+</head>
+
+<body>
+    <div class="main-tabs-box" id="tabsBox" runat="server" visible="false">
+        <div class="detail-box" data-title="項目一"></div>
+        <div class="detail-box" data-title="項目二"></div>
+        <div class="detail-box" data-title="項目三"></div>
+    </div>
+    <script>
+        {
+            function CreateTabs(item, index) {
+                let tabLI = document.createElement("li");
+                tabLI.className = "detail-tab";
+                tabLI.dataset.item = "tab" + index;
+                tabLI.innerHTML = item.dataset.title;
+
+                tabLI.addEventListener("click", function() {
+                    ChangeTabBoxActive.call(this);
+                    ChangeTabActive.call(this);
+                });
+                AddTab(tabLI);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

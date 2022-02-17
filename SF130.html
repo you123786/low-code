@@ -5,40 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SF130</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/gridModel.css">
+    <script src="./js/gridModel.js"></script>
 </head>
 
 <body>
-
-</body>
-<div style="color: black;">
-    <div style="display:flex;">
-        <button class="button">查詢</button>
-        <button class="button">新增</button>
-        <button class="button">修改</button>
-        <button class="button">刪除</button>
-        <div class="radioList radStatus">
-            <input type="radio" name="size" value="10">已回饋
-            <input type="radio" name="size" value="12">已審核
-            <input type="radio" name="size" value="14" checked>新建
-            <input type="radio" name="size" value="18">全部
+    <div style="color: black;">
+        <div style="display:flex;">
+            <button class="button">查詢</button>
+            <button class="button">新增</button>
+            <button class="button">修改</button>
+            <button class="button">刪除</button>
+            <div class="radioList radStatus">
+                <input type="radio" name="size" value="10">已回饋
+                <input type="radio" name="size" value="12">已審核
+                <input type="radio" name="size" value="14" checked>新建
+                <input type="radio" name="size" value="18">全部
+            </div>
         </div>
-    </div>
-    周派工周別<input type="date">
-    <div id="employeeTable" data-selectAll="true" class="grid-normal">
-        <div class="grid-thead">
-            <div class="grid-tr">
-                <div class="grid-th" data-field="employeeID" data-key="">派工班別</div>
-                <div class="grid-th" data-field="employeeName">訂單編號</div>
-                <div class="grid-th" data-field="year">項次</div>
-                <div class="grid-th" data-field="telephone">型體</div>
-                <div class="grid-th" data-field="telephone">應製數量</div>
-                <div class="grid-th" data-field="telephone">配套數</div>
+        周派工周別<input type="date">
+        <div id="employeeTable" data-selectAll="true" class="normal-grid">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="employeeID" data-key="">派工班別</div>
+                    <div class="grid-th" data-field="employeeName">訂單編號</div>
+                    <div class="grid-th" data-field="year">項次</div>
+                    <div class="grid-th" data-field="telephone">型體</div>
+                    <div class="grid-th" data-field="telephone">應製數量</div>
+                    <div class="grid-th" data-field="telephone">配套數</div>
+                </div>
+            </div>
+        </div>
+        <div id="tab-demo">
+            <ul class="tab-title">
+                <li><a href="#tab01">tab01</a></li>
+                <li><a href="#tab02">tab02</a></li>
+                <li><a href="#tab03">tab03</a></li>
+            </ul>
+            <div id="tab01" class="tab-inner">
+                <p>tab01的內容</p>
+            </div>
+            <div id="tab02" class="tab-inner">
+                <p>tab02的內容</p>
+            </div>
+            <div id="tab03" class="tab-inner">
+                <p>tab03的內容</p>
             </div>
         </div>
     </div>
+</body>
 
-</div>
 
 </html>

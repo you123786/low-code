@@ -1,36 +1,64 @@
-normal-table {
+.row-grid {
+    .grid-tr {
+        display: flex;
+        >.grid-th,
+        >.grid-td {
+            width: 100%;
+        }
+    }
+}
+
+.column-grid {
+    display: flex;
+    .grid-tbody {
+        display: flex;
+        flex-grow: 2;
+        .grid-tr {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .grid-td {
+                height: 100%
+            }
+        }
+    }
+}
+
+.row-grid,
+.column-grid {
     background-color: White;
     border: 1px solid #ccc;
     border-spacing: 0;
     margin-top: 0px;
+    .grid-th,
+    .grid-td {
+        border-style: solid;
+        border-width: 1px;
+        padding: .3rem .4rem;
+    }
     >.grid-thead {
         color: #fff;
         font-weight: bold;
         background: #006699;
         cursor: default;
-        >.grid-tr {
-            display: flex;
-            margin: 0px;
-            >.grid-th {
-                width: 100%;
-                margin: 0px;
-                padding: 1px 2px;
-                border-right: 1px solid white;
-            }
-        }
+        white-space: nowrap;
     }
-    >.grid-tbody {
-        background-color: white;
-        >.grid-tr {
-            display: flex;
-            border: 1px solid #ccc;
-            margin: 0px;
-            >.grid-td {
-                width: 100%;
-                margin: 0px;
-                padding: 1px 2px;
-                border-right: 1px solid #ccc;
-            }
-        }
+    >.grid-tbody .grid-td {
+        color: #333;
+        border-color: #ccc;
+    }
+}
+
+.row-grid.ItemLight,
+.column-grid.ItemLight {
+    .grid-tbody>.grid-tr:hover {
+        color: #333;
+        background: rgb(208, 243, 255);
+        cursor: pointer;
+    }
+    .grid-tbody>.grid-tr.selected-item,
+    .grid-tbody>.grid-tr.selected-item:hover {
+        background: #ffd666 !important;
+        cursor: pointer;
     }
 }
