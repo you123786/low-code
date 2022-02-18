@@ -9,24 +9,29 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/gridModel.css">
     <script src="./js/gridModel.js"></script>
+    <style>
+        .button {
+            margin: 0px 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="color: black;">
+    <div id="mainDiv" style="color: black;">
         <div style="display:flex;">
             <button class="button">查詢</button>
-            <button class="button">新增</button>
+            <button class="button" id="addBtn">新增</button>
             <button class="button">修改</button>
             <button class="button">刪除</button>
             <div class="radioList radStatus">
-                <input type="radio" name="size" value="10">已回饋
-                <input type="radio" name="size" value="12">已審核
-                <input type="radio" name="size" value="14" checked>新建
-                <input type="radio" name="size" value="18">全部
+                <input type="radio" name="status" value="10">已回饋
+                <input type="radio" name="status" value="12">已審核
+                <input type="radio" name="status" value="14" checked>新建
+                <input type="radio" name="status" value="18">全部
             </div>
         </div>
         周派工周別<input type="date">
-        <div id="employeeTable" data-selectAll="true" class="normal-grid">
+        <div class="row-grid ItemLight" id="employeeTable" data-selectAll="true">
             <div class="grid-thead">
                 <div class="grid-tr">
                     <div class="grid-th" data-field="employeeID" data-key="">派工班別</div>
@@ -38,23 +43,77 @@
                 </div>
             </div>
         </div>
-        <div id="tab-demo">
-            <ul class="tab-title">
-                <li><a href="#tab01">tab01</a></li>
-                <li><a href="#tab02">tab02</a></li>
-                <li><a href="#tab03">tab03</a></li>
-            </ul>
-            <div id="tab01" class="tab-inner">
-                <p>tab01的內容</p>
+        <div class="main-tabs-box" id="tabsBox" visible="false">
+            <div class="detail-box" data-title="產能明細" style="width: 100%;">
+                <div id="employeeTable1" data-selectAll="true" class="row-grid">
+                    <div class="grid-thead">
+                        <div class="grid-tr">
+                            <div class="grid-th" data-field="employeeID" data-key="">段別</div>
+                            <div class="grid-th" data-field="employeeName">結構代碼</div>
+                            <div class="grid-th" data-field="year">材料</div>
+                            <div class="grid-th" data-field="telephone">每雙片數</div>
+                            <div class="grid-th" data-field="telephone">應至數量</div>
+                            <div class="grid-th" data-field="telephone">完工數</div>
+                            <div class="grid-th" data-field="telephone">應製數量</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="tab02" class="tab-inner">
-                <p>tab02的內容</p>
-            </div>
-            <div id="tab03" class="tab-inner">
-                <p>tab03的內容</p>
+            <div class="detail-box" data-title="生產需求">
+                <div class="column-grid" id="employeeTable2" data-selectAll="true">
+                    <div class="grid-thead">
+                        <div class="grid-tr">
+                            <div class="grid-th" data-field="size" data-key="">結構部分</div>
+                            <div class="grid-th" data-field="need">材料</div>
+                            <div class="grid-th" data-field="finish">尺寸</div>
+                            <div class="grid-th" data-field="owe">回饋序號</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="elem-none" id="addDiv">
+        回饋序號:<label for=""></label>
+        <div id="bodyTable" data-selectAll="true" class="column-grid ItemLight">
+            <div class="grid-thead">
+                <div class="grid-tr">
+                    <div class="grid-th" data-field="size" data-key="">尺寸</div>
+                    <div class="grid-th" data-field="need">應製數量</div>
+                    <div class="grid-th" data-field="finish">完工數</div>
+                    <div class="grid-th" data-field="owe">欠數</div>
+                </div>
+            </div>
+        </div>
+        <button class="button">保存</button>
+        <button class="button" id="backBtn">返回</button>
+    </div>
+    <script>
+        {
+            window.addEventListener("DOMContentLoaded", function() {
+                document.querySelector('#addBtn').addEventListener('click', () => {
+                    document.querySelector('#mainDiv').classList.toggle('elem-none');
+                    document.querySelector('#addDiv').classList.toggle('elem-none');
+                });
+                document.querySelector('#backBtn').addEventListener('click', () => {
+                    document.querySelector('#mainDiv').classList.toggle('elem-none');
+                    document.querySelector('#addDiv').classList.toggle('elem-none');
+                });
+
+
+                document.querySelectorAll('[name=status]').forEach(input => input.addEventListener('change', () => {
+                    postRadio('http://localhost:3000/employeeTable', 'status', 'employeeTable')
+                }));
+
+                postRadio('http://localhost:3000/employeeTable', 'status', 'employeeTable');
+
+                TabsFun('tabsBox');
+                getGrid('http://localhost:3000/employeeTable', '', 'employeeTable1');
+                getGrid('http://localhost:3000/bodyTable', '', 'employeeTable2');
+                getGrid('http://localhost:3000/bodyTable', '', 'bodyTable');
+            });
+        }
+    </script>
 </body>
 
 

@@ -6,29 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabModel</title>
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/gridModel.js"></script>
 </head>
 
 <body>
-    <div class="main-tabs-box" id="tabsBox" runat="server" visible="false">
-        <div class="detail-box" data-title="項目一"></div>
-        <div class="detail-box" data-title="項目二"></div>
-        <div class="detail-box" data-title="項目三"></div>
+    <div class="main-tabs-box" id="tabsBox" visible="false">
+        <div class="detail-box" data-title="項目一" style="width: 100%;">
+            <div style="background-color: red;width: 90%;height: 100%;"></div>
+        </div>
+        <div class="detail-box" data-title="項目二">
+            <div style="background-color: green;width: 90%;height: 100%;"></div>
+        </div>
+        <div class="detail-box" data-title="項目三">
+            <div style="background-color: blue;width: 90%;height: 100%;"></div>
+        </div>
+    </div>
+    <div class="main-tabs-box" id="tabsBox1" visible="false">
+        <div class="detail-box" data-title="項目一" style="width: 100%;">
+            <div style="background-color: red;width: 90%;height: 100%;"></div>
+        </div>
+        <div class="detail-box" data-title="項目二">
+            <div style="background-color: green;width: 90%;height: 100%;"></div>
+        </div>
+        <div class="detail-box" data-title="項目三">
+            <div style="background-color: blue;width: 90%;height: 100%;"></div>
+        </div>
     </div>
     <script>
         {
-            function CreateTabs(item, index) {
-                let tabLI = document.createElement("li");
-                tabLI.className = "detail-tab";
-                tabLI.dataset.item = "tab" + index;
-                tabLI.innerHTML = item.dataset.title;
-
-                tabLI.addEventListener("click", function() {
-                    ChangeTabBoxActive.call(this);
-                    ChangeTabActive.call(this);
-                });
-                AddTab(tabLI);
-            }
-
+            TabsFun('tabsBox');
+            TabsFun('tabsBox1');
         }
     </script>
 </body>

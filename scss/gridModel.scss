@@ -1,3 +1,4 @@
+//grid樣式:row-grid、column-grid
 .row-grid {
     .grid-tr {
         display: flex;
@@ -61,4 +62,41 @@
         background: #ffd666 !important;
         cursor: pointer;
     }
+}
+
+//tabu樣式
+.main-tabs-box ul.tabList {
+    background: #E0ECFF;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #95B8E7;
+}
+
+.detail-tab {
+    color: #0E2D5F;
+    text-align: center;
+    display: inline-block;
+    background: #EFF5FF;
+    margin: 0 0 -1px 5px;
+    padding: .5rem 1rem;
+    border: 1px solid #95B8E7;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.detail-tab.active {
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+.detail-box {
+    display: none;
+    width: 100%;
+    height: 300px;
+    padding: .8rem;
+}
+
+.detail-box.active {
+    display: block;
 }

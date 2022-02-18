@@ -13,7 +13,7 @@
 <body>
     <button>全部刪除</button>
     <div style="margin-top: 5px;color: black;">
-        <div id="employeeTable" data-selectAll="true" class="row-grid ItemLight">
+        <div class="row-grid ItemLight" id="employeeTable" data-selectAll="true">
             <div class="grid-thead">
                 <div class="grid-tr">
                     <div class="grid-th" data-field="123">選擇
@@ -28,24 +28,25 @@
         </div>
     </div>
     <div style="margin-top: 50px;">
-        <div id="bodyTable" data-selectAll="true" class="column-grid ItemLight">
-            <div class="grid-thead">
-                <div class="grid-tr">
-                    <div class="grid-th" data-field="size" data-key="">尺寸</div>
-                    <div class="grid-th" data-field="need">應製數量</div>
-                    <div class="grid-th" data-field="finish">完工數</div>
-                    <div class="grid-th" data-field="owe">欠數</div>
+        <div class="column-grid ItemLight" id="bodyTable" data-selectAll="true">
+            <div>
+                <div class="grid-thead">
+                    <div class="grid-tr">
+                        <div class="grid-th" data-field="size" data-key="">尺寸</div>
+                        <div class="grid-th" data-field="need">應製數量</div>
+                        <div class="grid-th" data-field="finish">完工數</div>
+                        <div class="grid-th" data-field="owe">欠數</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        {
-            getGrid('http://localhost:3000/employeeTable', 'employeeTable');
-            getGrid('http://localhost:3000/bodyTable', 'bodyTable');
-        }
-    </script>
+        <script>
+            {
+                getGrid('http://localhost:3000/employeeTable', 'employeeTable');
+                getGrid('http://localhost:3000/bodyTable', 'bodyTable');
+            }
+        </script>
 </body>
 
 </html>
