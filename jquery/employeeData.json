@@ -1,5 +1,5 @@
 {
-    "rowTable": [{
+    "employeeTable": [{
             "employeeID": "1",
             "employeeName": "小王",
             "year": "18",
@@ -24,201 +24,136 @@
             "telephone": "09-59865421"
         }
     ],
-    "columnTable": [{
-            "size": "24",
-            "need": "56",
-            "finish": "23",
-            "owe": "33"
+    "bodyTable": [{
+            "body": "1",
+            "list": [{
+                    "size": "24",
+                    "need": "56",
+                    "finish": "23",
+                    "owe": "33"
+                },
+                {
+                    "size": "24.5",
+                    "need": "45",
+                    "finish": "45",
+                    "owe": "0"
+                },
+                {
+                    "size": "25",
+                    "need": "17",
+                    "finish": "16",
+                    "owe": "1"
+                },
+                {
+                    "size": "25.5",
+                    "need": "30",
+                    "finish": "25",
+                    "owe": "5"
+                },
+                {
+                    "size": "26",
+                    "need": "56",
+                    "finish": "25",
+                    "owe": "31"
+                },
+                {
+                    "size": "26.5",
+                    "need": "66",
+                    "finish": "66",
+                    "owe": "0"
+                },
+                {
+                    "size": "27",
+                    "need": "72",
+                    "finish": "33",
+                    "owe": "39"
+                },
+                {
+                    "size": "27.5",
+                    "need": "56",
+                    "finish": "55",
+                    "owe": "1"
+                },
+                {
+                    "size": "28",
+                    "need": "23",
+                    "finish": "23",
+                    "owe": "0"
+                },
+                {
+                    "size": "28.5",
+                    "need": "17",
+                    "finish": "19",
+                    "owe": "-2"
+                }
+            ]
         },
         {
-            "size": "24.5",
-            "need": "45",
-            "finish": "45",
-            "owe": "0"
-        },
-        {
-            "size": "25",
-            "need": "17",
-            "finish": "16",
-            "owe": "1"
-        },
-        {
-            "size": "25.5",
-            "need": "30",
-            "finish": "25",
-            "owe": "5"
-        },
-        {
-            "size": "26",
-            "need": "56",
-            "finish": "25",
-            "owe": "31"
-        },
-        {
-            "size": "26.5",
-            "need": "66",
-            "finish": "66",
-            "owe": "0"
-        },
-        {
-            "size": "27",
-            "need": "72",
-            "finish": "33",
-            "owe": "39"
-        },
-        {
-            "size": "27.5",
-            "need": "56",
-            "finish": "55",
-            "owe": "1"
-        },
-        {
-            "size": "28",
-            "need": "23",
-            "finish": "23",
-            "owe": "0"
-        },
-        {
-            "size": "28.5",
-            "need": "17",
-            "finish": "19",
-            "owe": "-2"
+            "body": "2",
+            "list": [{
+                    "size": "24",
+                    "need": "56",
+                    "finish": "23",
+                    "owe": "33"
+                },
+                {
+                    "size": "24.5",
+                    "need": "45",
+                    "finish": "45",
+                    "owe": "0"
+                },
+                {
+                    "size": "25",
+                    "need": "17",
+                    "finish": "16",
+                    "owe": "1"
+                },
+                {
+                    "size": "25.5",
+                    "need": "30",
+                    "finish": "25",
+                    "owe": "5"
+                },
+                {
+                    "size": "26",
+                    "need": "56",
+                    "finish": "25",
+                    "owe": "31"
+                },
+                {
+                    "size": "26.5",
+                    "need": "66",
+                    "finish": "66",
+                    "owe": "0"
+                },
+                {
+                    "size": "27",
+                    "need": "72",
+                    "finish": "33",
+                    "owe": "39"
+                },
+                {
+                    "size": "27.5",
+                    "need": "56",
+                    "finish": "55",
+                    "owe": "1"
+                },
+                {
+                    "size": "28",
+                    "need": "23",
+                    "finish": "23",
+                    "owe": "0"
+                },
+                {
+                    "size": "28.5",
+                    "need": "17",
+                    "finish": "19",
+                    "owe": "-2"
+                }
+            ]
         }
     ],
-    "bodyTable": [{
-            "employeeID": "1",
-            "employeeName": "小王",
-            "year": "18",
-            "telephone": "09-00000000",
-            "detail": [{
-                    "size": "24",
-                    "need": "56",
-                    "finish": "23",
-                    "owe": "33"
-                },
-                {
-                    "size": "24.5",
-                    "need": "45",
-                    "finish": "45",
-                    "owe": "0"
-                },
-                {
-                    "size": "25",
-                    "need": "17",
-                    "finish": "16",
-                    "owe": "1"
-                },
-                {
-                    "size": "25.5",
-                    "need": "30",
-                    "finish": "25",
-                    "owe": "5"
-                },
-                {
-                    "size": "26",
-                    "need": "56",
-                    "finish": "25",
-                    "owe": "31"
-                },
-                {
-                    "size": "26.5",
-                    "need": "66",
-                    "finish": "66",
-                    "owe": "0"
-                },
-                {
-                    "size": "27",
-                    "need": "72",
-                    "finish": "33",
-                    "owe": "39"
-                },
-                {
-                    "size": "27.5",
-                    "need": "56",
-                    "finish": "55",
-                    "owe": "1"
-                },
-                {
-                    "size": "28",
-                    "need": "23",
-                    "finish": "23",
-                    "owe": "0"
-                },
-                {
-                    "size": "28.5",
-                    "need": "17",
-                    "finish": "19",
-                    "owe": "-2"
-                }
-            ]
-        },
-        {
-            "employeeID": "1",
-            "employeeName": "小王",
-            "year": "18",
-            "telephone": "09-00000000",
-            "detail": [{
-                    "size": "24",
-                    "need": "56",
-                    "finish": "23",
-                    "owe": "33"
-                },
-                {
-                    "size": "24.5",
-                    "need": "45",
-                    "finish": "45",
-                    "owe": "0"
-                },
-                {
-                    "size": "25",
-                    "need": "17",
-                    "finish": "16",
-                    "owe": "1"
-                },
-                {
-                    "size": "25.5",
-                    "need": "30",
-                    "finish": "25",
-                    "owe": "5"
-                },
-                {
-                    "size": "26",
-                    "need": "56",
-                    "finish": "25",
-                    "owe": "31"
-                },
-                {
-                    "size": "26.5",
-                    "need": "66",
-                    "finish": "66",
-                    "owe": "0"
-                },
-                {
-                    "size": "27",
-                    "need": "72",
-                    "finish": "33",
-                    "owe": "39"
-                },
-                {
-                    "size": "27.5",
-                    "need": "56",
-                    "finish": "55",
-                    "owe": "1"
-                },
-                {
-                    "size": "28",
-                    "need": "23",
-                    "finish": "23",
-                    "owe": "0"
-                },
-                {
-                    "size": "28.5",
-                    "need": "17",
-                    "finish": "19",
-                    "owe": "-2"
-                }
-            ]
-        }
-    ]
-
+    "status": {
+        "status": "1"
+    }
 }

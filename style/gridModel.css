@@ -1,11 +1,18 @@
-.row-grid .grid-tr {
+.row-grid > .grid-thead > .grid-detail {
+  display: none;
+}
+
+.row-grid > .grid-thead > .grid-tr,
+.row-grid > .grid-tbody > .grid-tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.row-grid .grid-tr > .grid-th,
-.row-grid .grid-tr > .grid-td {
+.row-grid > .grid-thead > .grid-tr > .grid-th,
+.row-grid > .grid-thead > .grid-tr > .grid-td,
+.row-grid > .grid-tbody > .grid-tr > .grid-th,
+.row-grid > .grid-tbody > .grid-tr > .grid-td {
   width: 100%;
 }
 
@@ -15,7 +22,7 @@
   display: flex;
 }
 
-.column-grid .grid-tbody {
+.column-grid > .grid-tbody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +31,7 @@
           flex-grow: 2;
 }
 
-.column-grid .grid-tbody .grid-tr {
+.column-grid > .grid-tbody > .grid-tr {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +42,7 @@
           flex-direction: column;
 }
 
-.column-grid .grid-tbody .grid-tr .grid-td {
+.column-grid > .grid-tbody > .grid-tr > .grid-td {
   height: 100%;
 }
 
@@ -71,17 +78,17 @@
   border-color: #ccc;
 }
 
-.row-grid.ItemLight .grid-tbody > .grid-tr:hover,
-.column-grid.ItemLight .grid-tbody > .grid-tr:hover {
+.row-grid.ItemLight > .grid-tbody > .grid-tr:hover,
+.column-grid.ItemLight > .grid-tbody > .grid-tr:hover {
   color: #333;
   background: #d0f3ff;
   cursor: pointer;
 }
 
-.row-grid.ItemLight .grid-tbody > .grid-tr.selected-item,
-.row-grid.ItemLight .grid-tbody > .grid-tr.selected-item:hover,
-.column-grid.ItemLight .grid-tbody > .grid-tr.selected-item,
-.column-grid.ItemLight .grid-tbody > .grid-tr.selected-item:hover {
+.row-grid.ItemLight > .grid-tbody > .grid-tr.selected-item,
+.row-grid.ItemLight > .grid-tbody > .grid-tr.selected-item:hover,
+.column-grid.ItemLight > .grid-tbody > .grid-tr.selected-item,
+.column-grid.ItemLight > .grid-tbody > .grid-tr.selected-item:hover {
   background: #ffd666 !important;
   cursor: pointer;
 }

@@ -1,6 +1,10 @@
 //grid樣式:row-grid、column-grid
 .row-grid {
-    .grid-tr {
+    >.grid-thead>.grid-detail {
+        display: none;
+    }
+    >.grid-thead>.grid-tr,
+    >.grid-tbody>.grid-tr {
         display: flex;
         >.grid-th,
         >.grid-td {
@@ -11,14 +15,14 @@
 
 .column-grid {
     display: flex;
-    .grid-tbody {
+    >.grid-tbody {
         display: flex;
         flex-grow: 2;
-        .grid-tr {
+        >.grid-tr {
             width: 100%;
             display: flex;
             flex-direction: column;
-            .grid-td {
+            >.grid-td {
                 height: 100%
             }
         }
@@ -52,13 +56,13 @@
 
 .row-grid.ItemLight,
 .column-grid.ItemLight {
-    .grid-tbody>.grid-tr:hover {
+    >.grid-tbody>.grid-tr:hover {
         color: #333;
         background: rgb(208, 243, 255);
         cursor: pointer;
     }
-    .grid-tbody>.grid-tr.selected-item,
-    .grid-tbody>.grid-tr.selected-item:hover {
+    >.grid-tbody>.grid-tr.selected-item,
+    >.grid-tbody>.grid-tr.selected-item:hover {
         background: #ffd666 !important;
         cursor: pointer;
     }

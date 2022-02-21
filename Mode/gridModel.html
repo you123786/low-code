@@ -7,46 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gridModel</title>
     <link rel="stylesheet" href="../style/gridModel.css">
+    <link rel="stylesheet" href="../style/style.css">
     <script src="../js/gridModel.js"></script>
 </head>
 
 <body>
     <button>全部刪除</button>
-    <div style="margin-top: 5px;color: black;">
-        <div class="row-grid ItemLight" id="employeeTable" data-selectAll="true">
-            <div class="grid-thead">
-                <div class="grid-tr">
-                    <div class="grid-th" data-field="123">選擇
-                        <checkbox></checkbox>
-                    </div>
-                    <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
-                    <div class="grid-th" data-field="employeeName">員工姓名</div>
-                    <div class="grid-th" data-field="year">年紀</div>
-                    <div class="grid-th" data-field="telephone">電話</div>
+    <div class="row-grid ItemLight" id="rowTable" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="123">選擇
+                    <checkbox></checkbox>
                 </div>
+                <div class="grid-th" data-field="employeeID">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
             </div>
         </div>
     </div>
-    <div style="margin-top: 50px;">
-        <div class="column-grid ItemLight" id="bodyTable" data-selectAll="true">
-            <div>
-                <div class="grid-thead">
-                    <div class="grid-tr">
-                        <div class="grid-th" data-field="size" data-key="">尺寸</div>
-                        <div class="grid-th" data-field="need">應製數量</div>
-                        <div class="grid-th" data-field="finish">完工數</div>
-                        <div class="grid-th" data-field="owe">欠數</div>
-                    </div>
+
+    <div class="row-grid ItemLight" id="rowTable1" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-title">你好</div>
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="123">選擇
+                    <checkbox></checkbox>
                 </div>
+                <div class="grid-th" data-field="employeeID">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
             </div>
         </div>
+    </div>
 
-        <script>
-            {
-                getGrid('http://localhost:3000/employeeTable', 'employeeTable');
-                getGrid('http://localhost:3000/bodyTable', 'bodyTable');
-            }
-        </script>
+    <div class="column-grid ItemLight" id="columnTable" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="size">尺寸</div>
+                <div class="grid-th" data-field="need">應製數量</div>
+                <div class="grid-th" data-field="finish">完工數</div>
+                <div class="grid-th" data-field="owe">欠數</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-grid ItemLight" id="columnTable1" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-title">你好</div>
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="employeeID">選擇</div>
+                <div class="grid-th" data-field="employeeID">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-grid ItemLight" id="rowTable" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="123">選擇
+                    <checkbox></checkbox>
+                </div>
+                <div class="grid-th" data-field="employeeID">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-grid ItemLight" id="specialTable" data-selectAll="true" style="margin-top:50px;">
+        <div class="grid-thead">
+            <div class="grid-tr">
+                <div class="grid-th" data-field="123">選擇
+                    <checkbox></checkbox>
+                </div>
+                <div class="grid-th" data-field="employeeID">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
+            </div>
+            <div class="grid-detail ">
+                <div class="grid-th" data-field="size">尺寸</div>
+                <div class="grid-th" data-field="need">應製數量</div>
+                <div class="grid-th" data-field="finish">完工數</div>
+                <div class="grid-th" data-field="owe">欠數</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        {
+            initGrid('http://localhost:3000/rowTable', '', 'rowTable');
+
+            initGrid('http://localhost:3000/columnTable', '', 'columnTable');
+
+            DetailGrid('http://localhost:3000/bodyTable', '', 'specialTable')
+        }
+    </script>
 </body>
 
 </html>
