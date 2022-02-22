@@ -13,7 +13,7 @@
 
 <body>
     <button>全部刪除</button>
-    <div class="row-grid ItemLight" id="rowTable" data-selectAll="true" style="margin-top:50px;">
+    <!--<div class="row-grid ItemLight" id="rowTable" data-selectAll="true" style="margin-top:50px;">
         <div class="grid-thead">
             <div class="grid-tr">
                 <div class="grid-th" data-field="123">選擇
@@ -25,24 +25,20 @@
                 <div class="grid-th" data-field="telephone">電話</div>
             </div>
         </div>
-    </div>
-
+    </div>-->
     <div class="row-grid ItemLight" id="rowTable1" data-selectAll="true" style="margin-top:50px;">
-        <div class="grid-title">你好</div>
-        <div class="grid-thead">
-            <div class="grid-tr">
-                <div class="grid-th" data-field="123">選擇
-                    <checkbox></checkbox>
-                </div>
-                <div class="grid-th" data-field="employeeID">員工編號</div>
-                <div class="grid-th" data-field="employeeName">員工姓名</div>
-                <div class="grid-th" data-field="year">年紀</div>
-                <div class="grid-th" data-field="telephone">電話</div>
+        <div class="grid-main">
+            <div class="grid-th" data-field="123">選擇
+                <checkbox></checkbox>
             </div>
+            <div class="grid-th" data-field="employeeID">員工編號</div>
+            <div class="grid-th" data-field="employeeName">員工姓名</div>
+            <div class="grid-th" data-field="year">年紀</div>
+            <div class="grid-th" data-field="telephone">電話</div>
         </div>
     </div>
 
-    <div class="column-grid ItemLight" id="columnTable" data-selectAll="true" style="margin-top:50px;">
+    <!--<div class="column-grid ItemLight" id="columnTable" data-selectAll="true" style="margin-top:50px;">
         <div class="grid-thead">
             <div class="grid-tr">
                 <div class="grid-th" data-field="size">尺寸</div>
@@ -78,35 +74,35 @@
                 <div class="grid-th" data-field="telephone">電話</div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="row-grid ItemLight" id="specialTable" data-selectAll="true" style="margin-top:50px;">
-        <div class="grid-thead">
-            <div class="grid-tr">
-                <div class="grid-th" data-field="123">選擇
-                    <checkbox></checkbox>
-                </div>
-                <div class="grid-th" data-field="employeeID">員工編號</div>
-                <div class="grid-th" data-field="employeeName">員工姓名</div>
-                <div class="grid-th" data-field="year">年紀</div>
-                <div class="grid-th" data-field="telephone">電話</div>
+        <div class="grid-main">
+            <div class="grid-th" data-field="123">選擇
+                <checkbox></checkbox>
             </div>
-            <div class="grid-detail ">
-                <div class="grid-th" data-field="size">尺寸</div>
-                <div class="grid-th" data-field="need">應製數量</div>
-                <div class="grid-th" data-field="finish">完工數</div>
-                <div class="grid-th" data-field="owe">欠數</div>
-            </div>
+            <div class="grid-th" data-field="employeeID">員工編號</div>
+            <div class="grid-th" data-field="employeeName">員工姓名</div>
+            <div class="grid-th" data-field="year">年紀</div>
+            <div class="grid-th" data-field="telephone">電話</div>
+        </div>
+        <div class="grid-detail column-grid ItemLight">
+            <div class="grid-th" data-field="size">尺寸</div>
+            <div class="grid-th" data-field="need">應製數量</div>
+            <div class="grid-th" data-field="finish">完工數</div>
+            <div class="grid-th" data-field="owe">欠數</div>
         </div>
     </div>
 
     <script>
         {
-            initGrid('http://localhost:3000/rowTable', '', 'rowTable');
+            //initGrid('http://localhost:3000/rowTable', '', 'rowTable');
 
-            initGrid('http://localhost:3000/columnTable', '', 'columnTable');
+            //initGrid('http://localhost:3000/columnTable', '', 'columnTable');
 
-            DetailGrid('http://localhost:3000/bodyTable', '', 'specialTable')
+            gridsFun('http://localhost:3000/rowTable', '', 'rowTable1')
+
+            gridsFun('http://localhost:3000/bodyTable', '', 'specialTable')
         }
     </script>
 </body>

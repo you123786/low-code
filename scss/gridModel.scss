@@ -1,8 +1,5 @@
 //grid樣式:row-grid、column-grid
 .row-grid {
-    >.grid-thead>.grid-detail {
-        display: none;
-    }
     >.grid-thead>.grid-tr,
     >.grid-tbody>.grid-tr {
         display: flex;
@@ -35,6 +32,10 @@
     border: 1px solid #ccc;
     border-spacing: 0;
     margin-top: 0px;
+    >.grid-main,
+    >.grid-detail {
+        display: none;
+    }
     .grid-th,
     .grid-td {
         border-style: solid;

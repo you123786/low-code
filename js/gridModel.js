@@ -19,115 +19,90 @@ function getFetch(url, data) {
 }
 
 //產生動態grid資料
-function creatGrid(grid, gridData) {
-    let tbody = grid.querySelector(`.grid-tbody`);
-    let th = grid.querySelectorAll('.grid-thead>.grid-tr>.grid-th');
-
-    if (tbody !== null)
-        tbody.remove();
-
-    let tbodyContent = '';
-    gridData.forEach(data => {
-        tbodyContent += `<div class='grid-tr'>`;
-        th.forEach(event => {
-            tbodyContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
-        })
-        tbodyContent += `</div>`;
-    });
-
-    grid.innerHTML += `<div class='grid-tbody'>${tbodyContent}</div>`
-}
-
-
-//取得Grid資料
-function initGrid(url, data, gridID) {
+function gridsFun(url, data, gridID) {
     let grid = document.querySelector(`#${gridID}`);
-    getFetch(url, data).then(jsonData => {
-        creatGrid(grid, jsonData);
-    }).then(
-        () => {
-            grid.querySelectorAll('.grid-tbody >.grid-tr').forEach((event) => {
-                event.addEventListener('click', () => {
-                    let selectedItem = grid.querySelector('.selected-item')
-                    if (selectedItem !== null & selectedItem != event)
-                        selectedItem.classList.remove('selected-item');
-                    event.classList.toggle('selected-item');
-                });
-            });
-        }
-    );
-}
-
-function creatDetailGrid(grid, gridData) {
+    let main = grid.querySelector(`.grid-main`);
+    let detail = grid.querySelector(`.grid-detail`);
+    let thead = grid.querySelector(`.grid-thead`);
     let tbody = grid.querySelector(`.grid-tbody`);
-    let th = grid.querySelectorAll('.grid-thead>.grid-tr>.grid-th');
-    let detail = grid.querySelector('.grid-thead>.grid-detail');
-    let detailTH = grid.querySelectorAll('.grid-thead>.grid-detail>.grid-th');
+    let gridData = getFetch(url, data);
+    let mainField = grid.querySelectorAll('.grid-main>div');
+    let detailField = grid.querySelectorAll('.grid-detail>div');
 
-    if (tbody !== null)
-        tbody.remove();
+    initGrid();
 
-    let tbodyContent = '';
-    gridData.forEach(data => {
+    function initGrid() {
 
-        tbodyContent += `<div class='grid-tr'>`;
-        th.forEach(event => {
-            tbodyContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
-        })
-        tbodyContent += `</div>`;
+        if (thead !== null) thead.remove();
+        if (tbody !== null) tbody.remove();
+        creatThead();
+        (detail == null) ? gridData.then(jsonData => creatTbody(jsonData)).then(() => {
+            gridAddEventListener()
+        }): gridData.then(jsonData => creatTbodyDetail(jsonData)).then(() => {
 
-        let detailContent = ""
+        });
+    }
 
-        data['detail'].forEach(data => {
-            detailContent += "<div class='grid-tr'>"
-            detailTH.forEach(event => {
-                detailContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
+    function creatThead() {
+        grid.innerHTML += `<div class="grid-thead"><div class="grid-tr">${main.innerHTML}</div></div>`
+    }
+
+    function creatTbody(gridData) {
+        let tbodyContent = "";
+        gridData.forEach(data => {
+            tbodyContent += `<div class='grid-tr'>`;
+            mainField.forEach(event => {
+                tbodyContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
             })
-            detailContent += "</div>"
+            tbodyContent += `</div>`;
         })
+        grid.innerHTML += `<div class='grid-tbody'>${tbodyContent}</div>`
+    }
 
-        tbodyContent += `<div class="column-grid elem-none">
+    function creatTbodyDetail(gridData) {
+        let tbodyContent = '';
+        gridData.forEach(data => {
+            tbodyContent += `<div class='grid-tr'>`;
+            mainField.forEach(event => {
+                tbodyContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
+            })
+            tbodyContent += `</div>`;
+
+            let detailContent = ""
+
+            data['detail'].forEach(data => {
+                detailContent += "<div class='grid-tr'>"
+                detailField.forEach(event => {
+                    detailContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
+                })
+                detailContent += "</div>"
+            })
+
+            tbodyContent += `<div class="${detail.className} elem-none">
                                 <div class="grid-thead"><div class="grid-tr">${detail.innerHTML}</div></div>
                                 <div class='grid-tbody'>${detailContent}</div>
-                        </div>`
+                            </div>`
+        })
+        grid.innerHTML += `<div class='grid-tbody'>${tbodyContent}</div>`
+    }
 
-    });
-    grid.innerHTML += `<div class='grid-tbody'>${tbodyContent}</div>`
-}
+    function gridAddEventListener() {
+        if (!grid.classList.contains('ItemLight')) return;
+        document.querySelectorAll(`#${gridID} >.grid-tbody >.grid-tr`).forEach(event => {
+            event.addEventListener('click', () => {
+                let selectedItem = grid.querySelector('.selected-item')
 
-function DetailGrid(url, data, gridID) {
-    let grid = document.querySelector(`#${gridID}`);
-    getFetch(url, data).then(jsonData => {
-        creatDetailGrid(grid, jsonData);
-    }).then(
-        () => {
-            document.querySelectorAll(`#${gridID} >.grid-tbody >.grid-tr`).forEach((event) => {
-                event.addEventListener('click', () => {
-                    let selectedItem = grid.querySelector('.selected-item')
-
-                    if (selectedItem !== null & selectedItem != event) {
-                        console.log(selectedItem.nextElementSibling.innerHTML)
-                        selectedItem.classList.remove('selected-item');
-                        selectedItem.nextElementSibling.classList.add('elem-none');
-                    }
-                    event.classList.toggle('selected-item');
-                    event.nextElementSibling.classList.toggle('elem-none');
-                });
+                if (selectedItem !== null & selectedItem != event) {
+                    console.log(selectedItem.nextElementSibling.innerHTML)
+                    selectedItem.classList.remove('selected-item');
+                    selectedItem.nextElementSibling.classList.add('elem-none');
+                }
+                event.classList.toggle('selected-item');
+                event.nextElementSibling.classList.toggle('elem-none');
             });
-        }
-    );
+        });
+    }
 }
-
-function creatMainGrid(grid,gridData){
-    let field=grid.document.querySelectorAll('.grid-main');
-    
-
-
-
-}
-
-
-
 
 {
     //
