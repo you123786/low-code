@@ -21,28 +21,26 @@
     <script>
         {
             document.querySelectorAll('[name=size]').forEach(input => input.addEventListener('change', onChange => {
-                postRadio('http://localhost:3000/employeeTable', 'size', 'employeeTable')
+                postRadio('http://localhost:3000/rowTable', 'size', 'employeeTable')
             }));
         }
     </script>
     <div style="margin-top: 5px;">
         <div id="employeeTable" data-selectAll="true" class="row-grid ItemLight">
-            <div class="grid-thead">
-                <div class="grid-tr">
-                    <div class="grid-th" data-field="">選擇
-                        <checkbox></checkbox>
-                    </div>
-                    <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
-                    <div class="grid-th" data-field="employeeName">員工姓名</div>
-                    <div class="grid-th" data-field="year">年紀</div>
-                    <div class="grid-th" data-field="telephone">電話</div>
+            <div class="grid-main">
+                <div class="grid-th" data-field="">選擇
+                    <checkbox></checkbox>
                 </div>
+                <div class="grid-th" data-field="employeeID" data-key="">員工編號</div>
+                <div class="grid-th" data-field="employeeName">員工姓名</div>
+                <div class="grid-th" data-field="year">年紀</div>
+                <div class="grid-th" data-field="telephone">電話</div>
             </div>
         </div>
     </div>
     <script>
         {
-            postRadio('http://localhost:3000/employeeTable', 'size', 'employeeTable');
+            postRadio('http://localhost:3000/rowTable', 'size', 'employeeTable');
         }
     </script>
 </body>

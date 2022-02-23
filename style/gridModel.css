@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.row-grid > .grid-tbody > .grid-detail {
+  margin: 10px 5px;
+}
+
 .column-grid {
   display: -webkit-box;
   display: -ms-flexbox;
