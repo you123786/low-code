@@ -35,25 +35,29 @@ function gridsFun(url, data, gridID) {
 
         if (thead !== null) thead.remove();
         if (tbody !== null) tbody.remove();
-        creatThead();
-        (detail == null) ? gridData.then(jsonData => creatTbody(jsonData)).then(() => { gridEventListener() }): gridData.then(jsonData => creatTbodyDetail(jsonData)).then(() => { gridDetailEventListener() });
+        (detail == null) ? gridData.then(jsonData => creatMain(jsonData)).then(() => { gridEventListener() }): gridData.then(jsonData => creatTbodyDetail(jsonData)).then(() => { gridDetailEventListener() });
     }
 
-    function creatThead() {
-        grid.innerHTML += `<div class="grid-thead"><div class="grid-tr">${main.innerHTML}</div></div>`
+    function creatThead(Field) {
+        let th = `<div class="grid-thead"><div class="grid-tr">`;
+        Field.forEach(event => { th += `<div class='grid-th'>${event.innerHTML}</div>` })
+        return th += `</div></div>`;
     }
 
-    function creatTbody(gridData) {
+    function creatMain(gridData) {
+        let th = creatThead(mainField);
         let tbodyContent = '';
         gridData.forEach(data => {
             tbodyContent += `<div class='grid-tr'>`;
             mainField.forEach(event => { tbodyContent += `<div class='grid-td'>${data[event.dataset.field]}</div>`; })
             tbodyContent += `</div>`;
         })
-        grid.innerHTML += `<div class='grid-tbody'>${tbodyContent}</div>`
+        grid.innerHTML += `${th}<div class='grid-tbody'>${tbodyContent}</div>`
     }
 
     function creatTbodyDetail(gridData) {
+        let th = creatThead(mainField);
+        grid.innerHTML += th;
         let tbodyContent = '';
         gridData.forEach(data => {
             tbodyContent += `<div class='grid-tr'>`;
@@ -66,8 +70,10 @@ function gridsFun(url, data, gridID) {
                 detailContent += "</div>"
             })
 
+            let th = creatThead(detailField);
+
             tbodyContent += `<div class="${detail.className} elem-none">
-                                <div class="grid-thead"><div class="grid-tr">${detail.innerHTML}</div></div>
+                                ${th}
                                 <div class='grid-tbody'>${detailContent}</div>
                             </div>`
         })
