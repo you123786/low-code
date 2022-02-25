@@ -54,10 +54,10 @@
   margin-top: 0px;
 }
 
-.row-grid > .grid-main,
-.row-grid > .grid-detail,
-.column-grid > .grid-main,
-.column-grid > .grid-detail {
+.row-grid > .grid-bound-main,
+.row-grid > .grid--bound-detail,
+.column-grid > .grid-bound-main,
+.column-grid > .grid--bound-detail {
   display: none;
 }
 

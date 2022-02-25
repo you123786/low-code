@@ -35,8 +35,8 @@
     border: 1px solid #ccc;
     border-spacing: 0;
     margin-top: 0px;
-    >.grid-main,
-    >.grid-detail {
+    >.grid-bound-main,
+    >.grid--bound-detail {
         display: none;
     }
     .grid-th,
