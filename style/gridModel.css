@@ -1,3 +1,8 @@
+.data-grid > .bound-main,
+.data-grid > .bound-detail {
+  display: none;
+}
+
 .row-grid > .grid-thead > .grid-tr,
 .row-grid > .grid-tbody > .grid-tr {
   display: -webkit-box;
@@ -12,7 +17,7 @@
   width: 100%;
 }
 
-.row-grid > .grid-tbody > .grid-detail {
+.row-grid > .grid-tbody > .detail-grid {
   margin: 10px 5px;
 }
 
@@ -52,13 +57,6 @@
   border: 1px solid #ccc;
   border-spacing: 0;
   margin-top: 0px;
-}
-
-.row-grid > .grid-bound-main,
-.row-grid > .grid--bound-detail,
-.column-grid > .grid-bound-main,
-.column-grid > .grid--bound-detail {
-  display: none;
 }
 
 .row-grid .grid-th,

@@ -21,22 +21,23 @@ function getFetch(url, data) {
 //產生動態grid資料
 function gridsFun(url, data, gridID) {
     const grid = document.querySelector(`#${gridID}`);
-    let boundMain = grid.querySelector(`.grid-bound-main`);
-    let boundDetail = grid.querySelector(`.grid-bound-detail`);
+    let boundMain = grid.querySelector(`.bound-main`);
+    let boundDetail = grid.querySelector(`.bound-detail`);
 
     initGrid();
 
     function initGrid() {
-        let thead = grid.querySelector(`.grid-thead`);
-        if (thead !== null) thead.remove();
-        let tbody = grid.querySelector(`.grid-tbody`);
-        if (tbody !== null) tbody.remove();
+        let mainTable = grid.querySelector(`.grid-main`);
+        if (mainTable !== null) thead.remove();
 
-        getFetch(url, data).then(jsonData => creatGrid(jsonData)).then(() => { EventListener() })
+        getFetch(url, data).then(jsonData => creatGrid(jsonData, boundMain)).then(() => {
+            EventListener()
+        })
     }
 
     function creatGrid(data) {
-        grid.innerHTML += creatThead(boundMain) + creatTbody(data, boundMain)
+
+        grid.innerHTML += `<div class="grid-main ${boundMain.dataset.style}">${creatThead(boundMain) + creatTbody(data, boundGrid)}</div>`;
 
         function creatThead(field) {
             let thead = `<div class="grid-thead"><div class="grid-tr">`;
@@ -44,11 +45,17 @@ function gridsFun(url, data, gridID) {
             return thead += `</div></div>`;
         }
 
-        function creatTbody(data, field) {
+        function creatTbody(data, boundGrid) {
             let tbody = `<div class='grid-tbody'>`;
             data.forEach(data => {
                 tbody += `<div class='grid-tr'>`;
-                field.querySelectorAll('div').forEach(event => { tbody += `<div class='grid-td'>${data[event.dataset.field]}</div>`; })
+                boundGrid.querySelectorAll('div').forEach(event => {
+                    if (event.dataset.field == 'select') {
+                        tbody += `<div class='grid-td'>${event.innerHTML}</div>`
+                    } else {
+                        tbody += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
+                    }
+                })
                 tbody += `</div>`;
                 if (data['detail'] != undefined)
                     tbody += creatDetail(data['detail']);
@@ -57,32 +64,33 @@ function gridsFun(url, data, gridID) {
         }
 
         function creatDetail(data) {
-            return `<div class="${boundDetail.className} elem-none">${creatThead(boundDetail)}${creatTbody(data,boundDetail)}</div>`;
+            return `<div class="detail-grid ${boundDetail.dataset.style} elem-none">${creatThead(boundDetail)}${creatTbody(data,boundDetail)}</div>`;
         }
 
     }
 
     function EventListener() {
-        let mainTRs = document.querySelectorAll(`#${gridID} >.grid-tbody >.grid-tr`);
-        let mainItemLight = grid.classList.contains('ItemLight');
-        let detailTRs = document.querySelectorAll(`#${gridID} >.grid-tbody >.grid-detail >.grid-tbody >.grid-tr`);
+        let mainGrid = grid.querySelector(`.grid-main`);
+        let detailGrid = grid.querySelector(`grid-detail`);
+        let mainTRs = grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`);
+        let detailTRs = grid.querySelectorAll(`.grid-detail>.grid-tbody >.grid-tr`);
 
-        if (mainItemLight) mainTRs.forEach((item) => {
+        if (mainGrid.classList.contains('ItemLight')) mainTRs.forEach((item) => {
             item.addEventListener('click', function() {
-                clickFun(this, `#${gridID} >.grid-tbody >.grid-tr.selected-item`, true)
+                clickFun(this, mainGrid, true)
             })
         });
 
-        if (boundDetail == null) return;
-        if (boundDetail.classList.contains('ItemLight')) detailTRs.forEach((item) => {
+        if (detailGrid == null) return;
+        if (detailGrid.classList.contains('ItemLight')) detailTRs.forEach((item) => {
             item.addEventListener('click', function() {
-                clickFun(this, `#${gridID} >.grid-tbody >.grid-detail .grid-tr.selected-item`, false)
+                clickFun(this, detailGrid, false)
             })
         });
 
-        function clickFun(a, str, b) {
-            let selectedItem = document.querySelector(str);
-            let detailSelItem = document.querySelector(`#${gridID} >.grid-tbody >.grid-detail .grid-tr.selected-item`);
+        function clickFun(a, b) {
+            let selectedItem = grid.querySelector(' .grid-master >.grid-tbody >.grid-tr.selected-item');
+            let detailSelItem = grid.querySelector('.grid-detail >.grid-tbody >.grid-tr.selected-item');
             if (selectedItem !== null & selectedItem != a) {
                 selectedItem.classList.remove('selected-item');
                 if (b) {

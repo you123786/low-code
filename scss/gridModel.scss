@@ -1,4 +1,11 @@
 //grid樣式:row-grid、column-grid
+.data-grid {
+    >.bound-main,
+    >.bound-detail {
+        display: none;
+    }
+}
+
 .row-grid {
     >.grid-thead>.grid-tr,
     >.grid-tbody>.grid-tr {
@@ -8,7 +15,7 @@
             width: 100%;
         }
     }
-    >.grid-tbody>.grid-detail {
+    >.grid-tbody>.detail-grid {
         margin: 10px 5px;
     }
 }
@@ -35,10 +42,6 @@
     border: 1px solid #ccc;
     border-spacing: 0;
     margin-top: 0px;
-    >.grid-bound-main,
-    >.grid--bound-detail {
-        display: none;
-    }
     .grid-th,
     .grid-td {
         border-style: solid;
