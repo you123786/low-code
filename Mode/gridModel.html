@@ -13,20 +13,20 @@
 
 <body>
     <button>全部刪除</button>
-    <!--<div class="row-grid ItemLight" id="rowTable" data-selectAll="true" style="margin-top:50px;">
-        <div class="grid-thead">
-            <div class="grid-tr">
-                <div class="grid-th" data-field="123">選擇
-                    <checkbox></checkbox>
-                </div>
-                <div class="grid-th" data-field="employeeID">員工編號</div>
-                <div class="grid-th" data-field="employeeName">員工姓名</div>
-                <div class="grid-th" data-field="year">年紀</div>
-                <div class="grid-th" data-field="telephone">電話</div>
-            </div>
-        </div>
-    </div>-->
     <!--
+    <div class="data-grid" id="rowTable" data-selectAll="true" style="margin-top:50px;">
+        <div class="bound-main" data-style="row-grid">
+            <div data-field="template">
+                <div data-heater>按鈕</div>
+                <div data-item><button>修改</button></div>
+            </div>
+            <div data-field="employeeID">員工編號</div>
+            <div data-field="employeeName">員工姓名</div>
+            <div data-field="year">年紀</div>
+            <div data-field="telephone">電話</div>
+        </div>
+    </div>
+    
     <div class="row-grid ItemLight" id="rowTable1" data-selectAll="true" style="margin-top:50px;">
         <div class="grid-columns">
             <div data-field="123">選擇
@@ -37,19 +37,22 @@
             <div data-field="year">年紀</div>
             <div data-field="telephone">電話</div>
         </div>
-    </div>
+    </div>-->
 
-    
-    <div class="column-grid ItemLight" id="columnTable" data-selectAll="true" style="margin-top:50px;">
-        <div class="grid-main">
-            <div class="grid-th" data-field="size">尺寸</div>
-            <div class="grid-th" data-field="need">應製數量</div>
-            <div class="grid-th" data-field="finish">完工數</div>
-            <div class="grid-th" data-field="owe">欠數</div>
+
+    <div id="columnTable" class="data-grid" style="margin-top:50px;">
+        <div class="bound-main" data-style="column-grid">
+            <div data-field="size">尺寸</div>
+            <div data-field="need">應製數量</div>
+            <div data-field="finish">完工數</div>
+            <div data-field="template">
+                <div data-heater>欠數</div>
+                <div data-item><input type="number" style="width: 100%;"></div>
+            </div>
         </div>
     </div>
 
-    
+    <!--
     <div class="row-grid ItemLight" id="columnTable1" data-selectAll="true" style="margin-top:50px;">
         <div class="grid-title">你好</div>
         <div class="grid-thead">
@@ -79,8 +82,9 @@
 
     <div id="specialTable" class="data-grid" data-selectAll="true" style="margin-top:50px;">
         <div class="bound-main" data-style="row-grid ItemLight">
-            <div data-field="select">選擇
-                <input type="checkbox">
+            <div data-field="template">
+                <div data-heater><input type="checkbox">全選</div>
+                <div data-item><input type="checkbox">選擇</div>
             </div>
             <div data-field="employeeID">員工編號</div>
             <div data-field="employeeName">員工姓名</div>
@@ -99,7 +103,7 @@
         {
             //gridsFun('http://localhost:3000/rowTable', '', 'rowTable');
 
-            //gridsFun('http://localhost:3000/columnTable', '', 'columnTable');
+            gridsFun('http://localhost:3000/columnTable', '', 'columnTable');
 
 
             //gridsFun('http://localhost:3000/rowTable', '', 'rowTable1')

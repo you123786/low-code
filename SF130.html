@@ -31,62 +31,48 @@
             </div>
         </div>
         周派工周別<input type="date">
-        <div class="row-grid ItemLight" id="employeeTable" data-selectAll="true">
-            <div class="grid-thead">
-                <div class="grid-tr">
-                    <div class="grid-th" data-field="employeeID" data-key="">派工班別</div>
-                    <div class="grid-th" data-field="employeeName">訂單編號</div>
-                    <div class="grid-th" data-field="year">項次</div>
-                    <div class="grid-th" data-field="telephone">型體</div>
-                    <div class="grid-th" data-field="telephone">應製數量</div>
-                    <div class="grid-th" data-field="telephone">配套數</div>
-                </div>
+        <div class="data-grid" id="employeeTable" data-selectAll="true">
+            <div class="bound-main" data-style="row-grid ItemLight">
+                <div data-field="employeeID">派工班別</div>
+                <div data-field="employeeName">訂單編號</div>
+                <div data-field="year">項次</div>
+                <div data-field="telephone">型體</div>
+                <div data-field="telephone">應製數量</div>
+                <div data-field="telephone">配套數</div>
             </div>
         </div>
         <div class="main-tabs-box" id="tabsBox" visible="false">
             <div class="detail-box" data-title="產能明細" style="width: 100%;">
-                <div id="employeeTable1" data-selectAll="true" class="row-grid">
-                    <div class="grid-thead">
-                        <div class="grid-tr">
-                            <div class="grid-th" data-field="employeeID" data-key="">段別</div>
-                            <div class="grid-th" data-field="employeeName">結構代碼</div>
-                            <div class="grid-th" data-field="year">材料</div>
-                            <div class="grid-th" data-field="telephone">每雙片數</div>
-                            <div class="grid-th" data-field="telephone">應至數量</div>
-                            <div class="grid-th" data-field="telephone">完工數</div>
-                            <div class="grid-th" data-field="telephone">應製數量</div>
-                        </div>
+                <div id="employeeTable1" class="data-grid">
+                    <div class="bound-main" data-style="row-grid ItemLight">
+                        <div data-field="employeeID" data-key="">段別</div>
+                        <div data-field="employeeName">結構代碼</div>
+                        <div data-field="year">材料</div>
+                        <div data-field="telephone">每雙片數</div>
+                        <div data-field="telephone">應至數量</div>
+                        <div data-field="telephone">完工數</div>
+                        <div data-field="telephone">應製數量</div>
+                    </div>
+                    <div class="bound-detail" data-style="column-grid ItemLight">
+                        <div data-field="size">尺寸</div>
+                        <div data-field="need">應製數量</div>
+                        <div data-field="finish">完工數</div>
+                        <div data-field="owe">欠數</div>
                     </div>
                 </div>
             </div>
             <div class="detail-box" data-title="生產需求">
-                <div class="column-grid" id="employeeTable2" data-selectAll="true">
-                    <div class="grid-thead">
-                        <div class="grid-tr">
-                            <div class="grid-th" data-field="size" data-key="">結構部分</div>
-                            <div class="grid-th" data-field="need">材料</div>
-                            <div class="grid-th" data-field="finish">尺寸</div>
-                            <div class="grid-th" data-field="owe">回饋序號</div>
-                        </div>
+                <div id="employeeTable2" class="data-grid">
+                    <div class="bound-main" data-style="column-grid ItemLight">
+                        <div data-field="size">結構部分</div>
+                        <div data-field="need">材料</div>
+                        <div data-field="finish">尺寸</div>
+                        <div data-field="owe">回饋序號</div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div class="elem-none" id="addDiv">
-        回饋序號:<label for=""></label>
-        <div id="bodyTable" data-selectAll="true" class="column-grid ItemLight">
-            <div class="grid-thead">
-                <div class="grid-tr">
-                    <div class="grid-th" data-field="size" data-key="">尺寸</div>
-                    <div class="grid-th" data-field="need">應製數量</div>
-                    <div class="grid-th" data-field="finish">完工數</div>
-                    <div class="grid-th" data-field="owe">欠數</div>
-                </div>
-            </div>
-        </div>
-        <button class="button">保存</button>
-        <button class="button" id="backBtn">返回</button>
     </div>
     <script>
         {
@@ -95,22 +81,54 @@
                     document.querySelector('#mainDiv').classList.toggle('elem-none');
                     document.querySelector('#addDiv').classList.toggle('elem-none');
                 });
+
+                document.querySelectorAll('[name=status]').forEach(input => input.addEventListener('change', () => {
+                    postRadio('http://localhost:3000/rowTable', 'status', 'employeeTable')
+                }));
+
+
+
+                postRadio('http://localhost:3000/rowTable', 'status', 'employeeTable');
+
+                TabsFun('tabsBox');
+                gridsFun('http://localhost:3000/bodyTable', '', 'employeeTable1');
+                gridsFun('http://localhost:3000/columnTable', '', 'employeeTable2');
+
+            });
+        }
+    </script>
+    <div class="elem-none" id="addDiv">
+        回饋序號:<label for=""></label>
+        <div id="bodyTable" data-selectAll="true" class="data-grid">
+            <div class="bound-main" data-style="column-grid">
+                <div data-field="size">尺寸</div>
+                <div data-field="need">應製數量</div>
+                <div data-field="finish">完工數</div>
+                <div data-field="template">
+                    <div data-heater>欠數</div>
+                    <div data-item><input type="number" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+        <button class="button" id="saveBtn">保存</button>
+        <button class="button" id="backBtn">返回</button>
+    </div>
+    <script>
+        {
+            window.addEventListener("DOMContentLoaded", function() {
                 document.querySelector('#backBtn').addEventListener('click', () => {
                     document.querySelector('#mainDiv').classList.toggle('elem-none');
                     document.querySelector('#addDiv').classList.toggle('elem-none');
                 });
+                console.log();
+                document.querySelector('#saveBtn').addEventListener('click', () => {
+                    document.querySelectorAll(`#bodyTable>.grid-main input[type='number']`).forEach(event => {
+                        console.log(event.value);
+                    })
 
+                });
 
-                document.querySelectorAll('[name=status]').forEach(input => input.addEventListener('change', () => {
-                    postRadio('http://localhost:3000/employeeTable', 'status', 'employeeTable')
-                }));
-
-                postRadio('http://localhost:3000/employeeTable', 'status', 'employeeTable');
-
-                TabsFun('tabsBox');
-                getGrid('http://localhost:3000/employeeTable', '', 'employeeTable1');
-                getGrid('http://localhost:3000/bodyTable', '', 'employeeTable2');
-                getGrid('http://localhost:3000/bodyTable', '', 'bodyTable');
+                gridsFun('http://localhost:3000/columnTable', '', 'bodyTable');
             });
         }
     </script>

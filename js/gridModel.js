@@ -37,11 +37,17 @@ function gridsFun(url, data, gridID) {
 
     function creatGrid(data) {
 
-        grid.innerHTML += `<div class="grid-main ${boundMain.dataset.style}">${creatThead(boundMain) + creatTbody(data, boundGrid)}</div>`;
+        grid.innerHTML += `<div class="grid-main ${boundMain.dataset.style}">${creatThead(boundMain) + creatTbody(data, boundMain)}</div>`;
 
         function creatThead(field) {
             let thead = `<div class="grid-thead"><div class="grid-tr">`;
-            field.querySelectorAll('div').forEach(event => { thead += `<div class='grid-th'>${event.innerHTML}</div>` })
+            field.querySelectorAll('div[data-field]').forEach(event => {
+                if (event.dataset.field == 'template') {
+                    thead += `<div class='grid-th'>${event.querySelector('div[data-heater]').innerHTML}</div>`
+                } else {
+                    thead += `<div class='grid-th'>${event.innerHTML}</div>`
+                }
+            })
             return thead += `</div></div>`;
         }
 
@@ -49,9 +55,9 @@ function gridsFun(url, data, gridID) {
             let tbody = `<div class='grid-tbody'>`;
             data.forEach(data => {
                 tbody += `<div class='grid-tr'>`;
-                boundGrid.querySelectorAll('div').forEach(event => {
-                    if (event.dataset.field == 'select') {
-                        tbody += `<div class='grid-td'>${event.innerHTML}</div>`
+                boundGrid.querySelectorAll('div[data-field]').forEach(event => {
+                    if (event.dataset.field == 'template') {
+                        tbody += `<div class='grid-td'>${event.querySelector('div[data-item]').innerHTML}</div>`
                     } else {
                         tbody += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
                     }
@@ -64,42 +70,46 @@ function gridsFun(url, data, gridID) {
         }
 
         function creatDetail(data) {
-            return `<div class="detail-grid ${boundDetail.dataset.style} elem-none">${creatThead(boundDetail)}${creatTbody(data,boundDetail)}</div>`;
+            return `<div class="grid-detail ${boundDetail.dataset.style} elem-none">${creatThead(boundDetail)}${creatTbody(data,boundDetail)}</div>`;
         }
 
     }
 
     function EventListener() {
         let mainGrid = grid.querySelector(`.grid-main`);
-        let detailGrid = grid.querySelector(`grid-detail`);
-        let mainTRs = grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`);
-        let detailTRs = grid.querySelectorAll(`.grid-detail>.grid-tbody >.grid-tr`);
+        let detailGrid = grid.querySelector(`.grid-detail`);
 
-        if (mainGrid.classList.contains('ItemLight')) mainTRs.forEach((item) => {
-            item.addEventListener('click', function() {
-                clickFun(this, mainGrid, true)
-            })
-        });
 
-        if (detailGrid == null) return;
-        if (detailGrid.classList.contains('ItemLight')) detailTRs.forEach((item) => {
-            item.addEventListener('click', function() {
-                clickFun(this, detailGrid, false)
-            })
-        });
+        if (mainGrid.classList.contains('ItemLight'))
+            grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`).forEach((item) => {
+                item.addEventListener('click', function() { clickMainFun(this) })
+            });
 
-        function clickFun(a, b) {
-            let selectedItem = grid.querySelector(' .grid-master >.grid-tbody >.grid-tr.selected-item');
+        if (detailGrid !== null && detailGrid.classList.contains('ItemLight'))
+            grid.querySelectorAll(`.grid-detail>.grid-tbody >.grid-tr`).forEach((item) => {
+                item.addEventListener('click', function() { clickDetailFun(this) })
+            });
+
+        function clickMainFun(chickItem) {
+            let MainSelItem = grid.querySelector(' .grid-main >.grid-tbody >.grid-tr.selected-item');
             let detailSelItem = grid.querySelector('.grid-detail >.grid-tbody >.grid-tr.selected-item');
-            if (selectedItem !== null & selectedItem != a) {
-                selectedItem.classList.remove('selected-item');
-                if (b) {
-                    selectedItem.nextElementSibling.classList.add('elem-none');
+
+            if (MainSelItem !== null & MainSelItem != chickItem) {
+                MainSelItem.classList.remove('selected-item');
+                if (boundDetail != null) {
+                    MainSelItem.nextElementSibling.classList.add('elem-none');
                     if (detailSelItem != null) detailSelItem.classList.remove('selected-item');
                 }
             }
-            a.classList.toggle('selected-item');
-            if (b) a.nextElementSibling.classList.toggle('elem-none');
+            chickItem.classList.toggle('selected-item');
+            if (boundDetail != null) chickItem.nextElementSibling.classList.toggle('elem-none');
+        }
+
+        function clickDetailFun(chickItem) {
+            let detailSelItem = grid.querySelector('.grid-detail >.grid-tbody >.grid-tr.selected-item');
+            if (detailSelItem !== null & detailSelItem != chickItem)
+                detailSelItem.classList.remove('selected-item');
+            chickItem.classList.toggle('selected-item');
         }
     }
 }
