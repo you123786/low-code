@@ -6,24 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>工作日類型SF001</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/gridModel.css">
 </head>
 
 <body>
-    <button>查詢</button>
-    <button>新增</button>
-    <button>駁回</button>
-    <button>刪除</button>
-    <button>核准</button>
-    <div class="data-grid">
-        <div class="bound-main" data-style="row-grid ItemLight">
-            <div data-field="">明細</div>
-            <div>公司</div>
-            <div>工作日類型編號</div>
-            <div>新增日期</div>
-            <div>編輯狀態</div>
-            <div>建檔人</div>
+    <div id="mainDiv">
+        <button class="button">查詢</button>
+        <button id="addBtn" class="button">新增</button>
+        <button class="button">駁回</button>
+        <button class="button">刪除</button>
+        <button class="button">核准</button>
+        <div class="data-grid">
+            <div class="bound-main" data-style="row-grid ItemLight">
+                <div data-field="">明細</div>
+                <div data-field="CorpNo">公司</div>
+                <div data-field="WorkDayType">工作日類型編號</div>
+                <div data-field="TypeName">工作日類型名稱</div>
+                <div data-field="aDate">新增日期</div>
+                <div data-field="tStatusName">編輯狀態</div>
+                <div data-field="ausername">建檔人</div>
+            </div>
         </div>
     </div>
+    <script>
+        {
+
+
+        }
+    </script>
+    <div id="addDiv" class="elem-none">
+        <table>
+            <tr>
+                <td>公司別:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>工作日類型編號:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>工作日類型名稱:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="saveBtn" class="button">保存新增</button>
+                    <button id="backBtn" class="button">返回</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        {
+            let addBtn = document.querySelector('#addBtn');
+            let backBtn = document.querySelector('#backBtn');
+
+            function changeDiv() {
+                document.querySelector('#mainDiv').classList.toggle('elem-none');
+                document.querySelector('#addDiv').classList.toggle('elem-none');
+            }
+            addBtn.addEventListener('click', changeDiv);
+            backBtn.addEventListener('click', changeDiv);
+        }
+    </script>
 </body>
 
 </html>

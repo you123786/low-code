@@ -181,3 +181,15 @@ function TabsFun(tabsBoxID) {
         this.classList.add("active");
     }
 }
+
+function SQLBuilderFun(selBtnID) {
+    selBtn = document.querySelector(`#${selBtnID}`);
+
+    function initSQLBuilder() {
+
+    }
+
+    function creatSQLBuilder() {
+
+    }
+}
