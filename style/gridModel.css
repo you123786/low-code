@@ -1,5 +1,5 @@
-.data-grid > .bound-main,
-.data-grid > .bound-detail {
+.grid-box > .bound-main,
+.grid-box > .bound-detail {
   display: none;
 }
 

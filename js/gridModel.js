@@ -184,12 +184,16 @@ function TabsFun(tabsBoxID) {
 
 function SQLBuilderFun(selBtnID) {
     selBtn = document.querySelector(`#${selBtnID}`);
+    SQLBuilder = document.querySelector('.sqlBuilder-box');
 
     function initSQLBuilder() {
 
     }
 
     function creatSQLBuilder() {
-
+        SQLBuilder.innerHTML +=
+            `<div>
+            <bu>
+        </div>`
     }
 }
