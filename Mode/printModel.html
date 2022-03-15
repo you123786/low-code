@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 80px;
+            height: 35px;
+        }
+        
+        .print-content {
+            width: 846px;
+            height: 1086px;
+            overflow: auto;
+            background-color: rgb(142, 142, 142);
+            text-align: center;
+            clip: rect(0px, 848px, 1088px, 0px);
+            border-bottom: 2px solid #F0F0F0;
+            border-right: 2px solid #F0F0F0;
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+        }
+        
+        .paper {
+            position: relative;
+            width: 816px;
+            height: 1056px;
+            z-index: 1;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+            border-color: #000000;
+            margin: 0 auto;
+            top: 6px;
+        }
+        
+        .boundary {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            top: 0px;
+            left: 0px;
+            width: 806px;
+            height: 1036px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="printFun('print');">列印</button>
+    <div id="print" class="print-content">
+        <div class="paper">
+            <div class="boundary">
+                <div style="border: 1px solid black; height:50px"></div>
+            </div>
+        </div>
+        <script>
+            {
+                function printFun(print) {
+                    var newStr = document.querySelector(`#${print}`).innerHTML;
+                    var oldStr = document.body.innerHTML;
+                    document.body.innerHTML = newStr;
+                    window.print();
+                    document.body.innerHTML = oldStr;
+                    return false;
+                }
+
+            }
+        </script>
+</body>
+
+</html>

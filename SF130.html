@@ -19,10 +19,10 @@
 <body>
     <div id="mainDiv" style="color: black;">
         <div style="display:flex;">
-            <button class="button">查詢</button>
-            <button class="button" id="addBtn">新增</button>
-            <button class="button">修改</button>
-            <button class="button">刪除</button>
+            <button id="selBtn" class="button" name="sel">查詢</button>
+            <button id="addBtn" class="button" name="add">新增</button>
+            <button id="EditBtn" class="button" name="edit">修改</button>
+            <button id="DelBtn" class="button" name="del">刪除</button>
             <div class="radioList radStatus">
                 <input type="radio" name="status" value="10">已回饋
                 <input type="radio" name="status" value="12">已審核
@@ -69,7 +69,6 @@
                         <div data-field="finish">尺寸</div>
                         <div data-field="owe">回饋序號</div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -77,16 +76,10 @@
     <script>
         {
             window.addEventListener("DOMContentLoaded", function() {
-                document.querySelector('#addBtn').addEventListener('click', () => {
-                    document.querySelector('#mainDiv').classList.toggle('elem-none');
-                    document.querySelector('#addDiv').classList.toggle('elem-none');
-                });
 
                 document.querySelectorAll('[name=status]').forEach(input => input.addEventListener('change', () => {
                     postRadio('http://localhost:3000/rowTable', 'status', 'employeeTable')
                 }));
-
-
 
                 postRadio('http://localhost:3000/rowTable', 'status', 'employeeTable');
 
@@ -116,20 +109,79 @@
     <script>
         {
             window.addEventListener("DOMContentLoaded", function() {
-                document.querySelector('#backBtn').addEventListener('click', () => {
-                    document.querySelector('#mainDiv').classList.toggle('elem-none');
-                    document.querySelector('#addDiv').classList.toggle('elem-none');
-                });
-                console.log();
-                document.querySelector('#saveBtn').addEventListener('click', () => {
+                const selBtn = document.querySelector('#selBtn');
+                const addBtn = document.querySelector('#addBtn');
+                const editBtn = document.querySelector('#EditBtn');
+                const delBtn = document.querySelector('#DelBtn');
+                const saveBtn = document.querySelector('#saveBtn');
+                const backBtn = document.querySelector('#backBtn');
+                const mainDiv = document.querySelector('#mainDiv');
+                const addDiv = document.querySelector('#addDiv');
+
+                let changeDiv = function() {
+                    mainDiv.classList.toggle('elem-none');
+                    addDiv.classList.toggle('elem-none');
+                }
+
+                addBtn.addEventListener('click', changeDiv);
+                backBtn.addEventListener('click', changeDiv);
+
+                let saveData = function() {
                     document.querySelectorAll(`#bodyTable>.grid-main input[type='number']`).forEach(event => {
                         console.log(event.value);
                     })
+                }
 
-                });
+                saveBtn.addEventListener('click', saveData);
 
-                gridsFun('http://localhost:3000/columnTable', '', 'bodyTable');
-            });
+                let buttonClick = function() {
+                    const method = '';
+                    const btnName = this.name;
+                    switch (btnName) {
+                        case 'sel':
+                            alert('查詢按鈕被按下');
+                            break;
+                        case 'add':
+                            alert('新增按鈕被按下');
+                            break;
+                        case 'edit':
+                            method = 'PUT';
+                            alert('修改按鈕被按下');
+                            break;
+                        case 'del':
+                            method = 'DELETE';
+                            alert('刪除按鈕被按下');
+                            break;
+                        case 'save':
+                            alert('保存按鈕被按下');
+                            break;
+                        default:
+                            alert('我不知道你為什麼來這');
+                    }
+                    url = ``;
+
+                    let headers = {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                    }
+                    fetch(url, {
+                        method: PaymentMethodChangeEvent,
+                        headers: headers,
+                        body: JSON.stringify(data)
+                    }).then((response) => {
+                        return response.json();
+                    }).then((jsonData) => {
+                        console.log(jsonData);
+                    }).catch((err) => {
+                        console.log('錯誤:', err);
+                    })
+                }
+
+                selBtn.addEventListener('click', buttonClick);
+                editBtn.addEventListener('click', buttonClick);
+                delBtn.addEventListener('click', buttonClick);
+                saveBtn.addEventListener('click', buttonClick);
+            })
         }
     </script>
 </body>

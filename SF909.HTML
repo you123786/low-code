@@ -6,22 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .print-content {
+            width: 846px;
+            height: 1086px;
+            overflow: auto;
+            background-color: rgb(142, 142, 142);
+            text-align: center;
+            clip: rect(0px, 848px, 1088px, 0px);
+            border-bottom: 2px solid #F0F0F0;
+            border-right: 2px solid #F0F0F0;
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+        }
+        
+        .paper {
+            position: relative;
+            width: 816px;
+            height: 1056px;
+            z-index: 1;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+            border-color: #000000;
+            margin: 0 auto;
+            top: 6px;
+        }
+        
+        .boundary {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            top: 0px;
+            left: 0px;
+            width: 806px;
+            height: 1036px;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
-    <label>訂單<input type="text"></label>
-    <label>項次<input type="text"></label>
-    <label>部門<input type="text"></label>
-    <div style="width: 100%;border-style:solid; height: 500px;">
-        <label>訂單 <input type="text"></label>
-        <label>鞋型<input type="text"></label>
-        <label>應製雙數<input type="text"></label>
-        <table>
-            <td>
-                <tr></tr>
-            </td>
-        </table>
+    <label>訂單編號:<input type="text"><button class="button"></button></label>
+    <label>訂單項次:<input type="text"></label>
+    <label>使用部門<input type="text"></label>
+    <button onclick="printFun('print');">列印</button>
+    <div class="print-content">
+        <div class="paper">
+            <div id="print" class="boundary">
+                <div style="border:1px solid black">
+                    <div style="margin: 5px;">
+                        <label>訂單 :<input type="text" value="158325-OP-02"></label>
+                        <label>鞋型 :<input type="text" value="MIZNE07K00"></label>
+                        <label>版次 :<input type="text" value="01"></label>
+                    </div>
+                    <label>應製雙數:<input type="text" value="1,200"></label>
+
+                    <table>
+                        <tr>
+                            <td>炫號</td>
+                            <td>22</td>
+                            <td>22.5</td>
+                            <td>23</td>
+                            <td>24.5</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>26.5</td>
+                            <td>27</td>
+                            <td>27.5</td>
+                        </tr>
+                        <tr>
+                            <td>雙數</td>
+                            <td>120</td>
+                            <td>96</td>
+                            <td>84</td>
+                            <td>36</td>
+                            <td>24</td>
+                            <td>36</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td>36</td>
+                            <td>24</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        {
+            function printFun(printContent) {
+                var newStr = document.querySelector(`#${printContent}`).innerHTML;
+                var oldStr = document.body.innerHTML;
+                document.body.innerHTML = newStr;
+                window.print();
+                document.body.innerHTML = oldStr;
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
