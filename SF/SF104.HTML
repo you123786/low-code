@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非裁斷(段別)半成品完工數[SF104]</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/AllModel.js"></script>
+    <style>
+        button {
+            line-height: 1;
+            width: auto !important;
+            height: auto !important;
+            margin-right: 0.3rem;
+            padding: 0.5rem 0.8rem;
+            cursor: pointer;
+            border-color: rgba(0, 0, 0, .2);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+        }
+        
+        input[type="text"],
+        input[type="date"] {
+            width: 130px;
+        }
+        
+        #mainDiv>div {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv" style="color:black;">
+        <div>
+            <select id="ddlTop"></select>
+            <button class="button">查詢</button>
+            <button class="button">新增</button>
+            <button class="button">修改</button>
+            <button class="button">刪除</button>
+            <button class="button">預覽</button>
+            <button class="button">打印</button>
+            <div class="radioList radStatus">
+                <input type="radio" value="">未核准
+                <input type="radio" value="">核准
+                <input type="radio" value="">全部
+                <input type="radio" value="">已提交
+            </div>
+        </div>
+        <div>
+            部門:<input type="text">
+            <button class="button">>></button>
+            <input type="text">
+
+            <select name="" id="">
+                <option value="">繳庫日期</option>
+                <option value="">核准日期</option>
+            </select>
+            <input type="date">
+            <input type="date">
+            <button class="button">導出</button>
+        </div>
+        <div id="mainGrid" class="grid-box">
+            <div class="bound-main" data-style="row-grid ItemLight">
+                <div data-field="DeptNo">部門別</div>
+                <div data-field="AcceptID">繳庫單號</div>
+                <div data-field="AcceptDate">繳庫日期</div>
+                <div data-field="SalesNoteNO">訂單</div>
+                <div data-field="ItemNO">項次</div>
+                <div data-field="PatternNO">公司型體</div>
+                <div data-field="aUser">繳庫人</div>
+                <div data-field="aDate">創建時間</div>
+                <div data-field="mUser">修改人</div>
+                <div data-field="mDate">修改時間</div>
+                <div data-field="cUser">核准人</div>
+                <div data-field="cDate">核准時間</div>
+                <div data-field="PrintFlag">是否打印</div>
+                <div data-field="tStatusName">狀態</div>
+                <div data-field="MaxClass_Name">料類名稱</div>
+                <div data-field="DeptKindName">段別</div>
+            </div>
+        </div>
+    </div>
+    <div id="addDiv">
+        <div>
+            <table class="dataTable alignCenterTable" border="1">
+                <tr>
+                    <td>繳庫單號:</td>
+                    <td><input type="text"></td>
+                    <td>部門:</td>
+                    <td></td>
+                    <td>繳庫日期:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>訂單:</td>
+                    <td></td>
+                    <td>項次:</td>
+                    <td></td>
+                    <td>客戶訂單</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>公司形體號:</td>
+                    <td></td>
+                    <td>段別:</td>
+                    <td></td>
+                    <td>完成物</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>繳庫人:</td>
+                    <td></td>
+                    <td>規格說明:</td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="detailGrid" class="grid-box">
+            <div class="bound-main" data-style="column-grid">
+                <div data-field="size">鞋號</div>
+                <div data-field="need">應制數</div>
+                <div data-field="finish">
+                    <div data-header>實際繳庫數</div>
+                    <div data-item><input type="number" style="width: 130px;"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            製程明細: <input type="text">全選
+            <div></div>
+        </div>
+        <div>
+            之前審核意見:
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="button">選擇鞋號</button>
+        <button class="button">審核通過</button>
+        <button class="button">審核駁回</button>
+        <button class="button">提交</button>
+        <button class="button">保存</button>
+        <button class="button">返回</button>
+    </div>
+    <div id="specDiv">
+        <label>繳庫單據:<input type="text"></label>
+        <label>核准時間<input type="text"></label>
+        <button id="specSaveBtn" class="button">確定</button>
+    </div>
+    <script>
+        {
+            ddlTopFun('ddlTop');
+
+        }
+    </script>
+</body>
+
+</html>

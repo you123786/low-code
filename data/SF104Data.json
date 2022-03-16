@@ -1,0 +1,81 @@
+{
+    "SF104": [{
+        "Success": true,
+        "Token": "123544",
+        "Code": "200",
+        "Message": "更新成功",
+        "DateTime": "2022-03-16 14:15",
+        "Data": [{
+            "GortexAccept": [{
+                "DeptNo": "底二課底二組",
+                "AcceptID": "GT21030547",
+                "AcceptDate": "2021/03/05",
+                "SalesNoteNo": "CIC2102Y",
+                "ItemNo": "10",
+                "PatternNO": "MIZNH06C00",
+                "aUser": "jock",
+                "aDate": "2021/03/05",
+                "mUser": "jock",
+                "mDate": "2021/03/05",
+                "cUser": "",
+                "cDate": "",
+                "PrintFlag": "未印",
+                "tStatusName": "核准駁回",
+                "MaxClass_Name": "半成品類",
+                "DeptKindName": "鞋底"
+            }, {
+                "DeptNo": "底二課底二組",
+                "AcceptID": "GT21030547",
+                "AcceptDate": "2021/03/05",
+                "SalesNoteNo": "CIC2102Y",
+                "ItemNo": "10",
+                "PatternNO": "MIZNH06C00",
+                "aUser": "jock",
+                "aDate": "2021/03/05",
+                "mUser": "jock",
+                "mDate": "2021/03/05",
+                "cUser": "",
+                "cDate": "",
+                "PrintFlag": "未印",
+                "tStatusName": "核准駁回",
+                "MaxClass_Name": "半成品類",
+                "DeptKindName": "鞋底"
+            }, {
+                "DeptNo": "底二課底二組",
+                "AcceptID": "GT21030547",
+                "AcceptDate": "2021/03/05",
+                "SalesNoteNo": "CIC2102Y",
+                "ItemNo": "10",
+                "PatternNO": "MIZNH06C00",
+                "aUser": "jock",
+                "aDate": "2021/03/05",
+                "mUser": "jock",
+                "mDate": "2021/03/05",
+                "cUser": "",
+                "cDate": "",
+                "PrintFlag": "未印",
+                "tStatusName": "核准駁回",
+                "MaxClass_Name": "半成品類",
+                "DeptKindName": "鞋底"
+            }],
+            "IC_GortexAcceptDetail": [{
+                "DeptNo": "底二課底二組",
+                "AcceptID": "GT21030547",
+                "AcceptDate": "2021/03/05",
+                "SalesNoteNo": "CIC2102Y",
+                "ItemNo": "10",
+                "PatternNO": "MIZNH06C00",
+                "aUser": "jock",
+                "aDate": "2021/03/05",
+                "mUser": "jock",
+                "mDate": "2021/03/05",
+                "cUser": "",
+                "cDate": "",
+                "PrintFlag": "未印",
+                "tStatusName": "核准駁回",
+                "MaxClass_Name": "半成品類",
+                "DeptKindName": "鞋底"
+            }]
+        }]
+    }]
+}

@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../style/gridModel.css">
     <link rel="stylesheet" href="../style/style.css">
     <script src="../js/gridModel.js"></script>
+    <style>
+        .employeeID-class {
+            min-width: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -46,9 +51,10 @@
             <div data-field="need">應製數量</div>
             <div data-field="finish">完工數</div>
             <div data-field="template">
-                <div data-heater>欠數</div>
+                <div data-header>欠數</div>
                 <div data-item><input type="number" style="width: 100%;"></div>
             </div>
+            <div data-field="finish" class="elem-none">完工數</div>
         </div>
     </div>
 
@@ -83,10 +89,10 @@
     <div id="specialTable" class="grid-box" data-selectAll="true" style="margin-top:50px;">
         <div class="bound-main" data-style="row-grid ItemLight">
             <div data-field="template">
-                <div data-heater><input type="checkbox">全選</div>
+                <div data-header><input type="checkbox">全選</div>
                 <div data-item><input type="checkbox">選擇</div>
             </div>
-            <div data-field="employeeID">員工編號</div>
+            <div data-field="employeeID" data-hidden="true" class="employeeID-class">員工編號</div>
             <div data-field="employeeName">員工姓名</div>
             <div data-field="year">年紀</div>
             <div data-field="telephone">電話</div>

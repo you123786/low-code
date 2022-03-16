@@ -42,11 +42,8 @@ function gridsFun(url, data, gridID) {
         function creatThead(field) {
             let thead = `<div class="grid-thead"><div class="grid-tr">`;
             field.querySelectorAll('div[data-field]').forEach(event => {
-                if (event.dataset.field == 'template') {
-                    thead += `<div class='grid-th'>${event.querySelector('div[data-heater]').innerHTML}</div>`
-                } else {
-                    thead += `<div class='grid-th'>${event.innerHTML}</div>`
-                }
+                let tdContent = event.dataset.field == 'template' ? event.querySelector('div[data-header]').innerHTML : event.innerHTML;
+                thead += `<div class='grid-th ${event.classList}'>${tdContent}</div>`
             })
             return thead += `</div></div>`;
         }
@@ -56,11 +53,8 @@ function gridsFun(url, data, gridID) {
             data.forEach(data => {
                 tbody += `<div class='grid-tr'>`;
                 boundGrid.querySelectorAll('div[data-field]').forEach(event => {
-                    if (event.dataset.field == 'template') {
-                        tbody += `<div class='grid-td'>${event.querySelector('div[data-item]').innerHTML}</div>`
-                    } else {
-                        tbody += `<div class='grid-td'>${data[event.dataset.field]}</div>`;
-                    }
+                    let tdContent = event.dataset.field == 'template' ? event.querySelector('div[data-item]').innerHTML : data[event.dataset.field];
+                    tbody += `<div class='grid-td ${event.classList}' data-field='${event.dataset.field}'>${tdContent}</div>`
                 })
                 tbody += `</div>`;
                 if (data['detail'] != undefined)
