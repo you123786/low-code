@@ -46,7 +46,7 @@
 
 
     <div id="columnTable" class="grid-box" style="margin-top:50px;">
-        <div class="bound-main" data-style="column-grid">
+        <div class="bound-main" data-field="columnTable" data-style="column-grid">
             <div data-field="size">尺寸</div>
             <div data-field="need">應製數量</div>
             <div data-field="finish">完工數</div>
@@ -87,15 +87,18 @@
     </div>-->
 
     <div id="specialTable" class="grid-box" data-selectAll="true" style="margin-top:50px;">
-        <div class="bound-main" data-style="row-grid ItemLight">
-            <div data-field="template">
-                <div data-header><input type="checkbox">全選</div>
-                <div data-item><input type="checkbox">選擇</div>
-            </div>
+        <div class="bound-main" data-field="bodyTable" data-style="row-grid ItemLight">
             <div data-field="employeeID" data-hidden="true" class="employeeID-class">員工編號</div>
             <div data-field="employeeName">員工姓名</div>
             <div data-field="year">年紀</div>
             <div data-field="telephone">電話</div>
+            <div data-field="template">
+                <div data-header>操作</div>
+                <div data-item>
+                    <button class="button">修改</button>
+                    <button class="button">刪除</button>
+                </div>
+            </div>
         </div>
         <div class="bound-detail" data-style="column-grid ItemLight">
             <div data-field="size">尺寸</div>
@@ -109,12 +112,12 @@
         {
             //gridsFun('http://localhost:3000/rowTable', '', 'rowTable');
 
-            gridsFun('http://localhost:3000/columnTable', '', 'columnTable');
+            gridsFun('http://localhost:3000/employee', '', 'columnTable');
 
 
             //gridsFun('http://localhost:3000/rowTable', '', 'rowTable1')
 
-            gridsFun('http://localhost:3000/bodyTable', '', 'specialTable')
+            gridsFun('http://localhost:3000/employee', '', 'specialTable')
         }
     </script>
 </body>

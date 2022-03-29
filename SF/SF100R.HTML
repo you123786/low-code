@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF1001</title>
+</head>
+
+<body>
+    <div id="printDiv">
+        <div>
+            <label>生產單位 : <input type="text"></label>
+            <label>段別 : <input type="text"></label>
+        </div>
+        <div>
+            <label>周派工周別 :  <input type="text"></label>
+            <button>查詢</button>
+        </div>
+        <div>
+            <label>科號格式 : </label>
+            <label>預設列印份數 :  </label>
+            <button class="button">預覽</button>
+            <button class="button">本機列印</button>
+        </div>
+        <div>
+            <div id="printGrid" class="grid-box" style="margin-top:50px;">
+                <div class="bound-main" data-style="column-grid">
+                    <div data-field="template">
+                        <div data-header>全選<input type="checkbox"></div>
+                        <div data-item><input type="checkbox"></div>
+                    </div>
+                    <div data-field="size">訂單編號</div>
+                    <div data-field="need">項次</div>
+                    <div data-field="finish">型體</div>
+                    <div data-field="finish">應至數量</div>
+                    <div data-field="finish">列印份數</div>
+                    <div data-field="finish">最近列印日期</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+</body>
+
+</html>

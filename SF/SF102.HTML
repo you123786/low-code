@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div>
+            <button>查詢</button>
+            <button>新增</button>
+            <div class="radioList radStatus">
+                <input type="radio" value="">全數完工
+                <input type="radio" value="">新增
+                <input type="radio" value="">欠數
+                <input type="radio" value="">全部
+            </div>
+        </div>
+        <div>
+            <label>生產單位 : <input type="text"></label>
+            <label>段別 : <input type="text"></label>
+        </div>
+        <div>
+            <label>周派工週別<input type="text"></label>
+            <button>查詢</button>
+        </div>
+        <div id="" class="grid-box">
+            <div class="bound-main data-style=" column-grid ">
+                <div data-field="size ">派工單號</div>
+                <div data-field="need ">訂單編號</div>
+                <div data-field="finish ">項次</div>
+                <div data-field="size ">型體</div>
+                <div data-field="need ">應製數量</div>
+                <div data-field="finish ">配套數量</div>
+                <div data-field="need ">建檔日期</div>
+                <div data-field="finish ">進度狀態</div>
+            </div>
+        </div>
+        
+        <div>
+            <div class="bound-main data-style=" column-grid ">
+                <div data-field="size ">派工單號</div>
+                <div data-field="need ">訂單編號</div>
+                <div data-field="finish ">項次</div>
+                <div data-field="size ">型體</div>
+                <div data-field="need ">應製數量</div>
+                <div data-field="finish ">配套數量</div>
+                <div data-field="need ">建檔日期</div>
+                <div data-field="finish ">進度狀態</div>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
+    <div id="addDiv ">
+        <div>
+            <label>訂單編號 : <input type="text "></label>
+            <label>項次 : <input type="text "></label>
+            <label>派工單號 : <input type="text "></label>
+            <label>項次 : <input type="text "></label>
+        </div>
+        <div>
+            <label>公司型體 : <input type="text "></label>
+            <label>回饋序號 : <input type="text "> </label>
+        </div>
+        <div>
+            <label>應製數量 : <input type="text "></label>
+            <button class="button ">保存</button>
+            <button class="button ">返回</button>
+        </div>
+        <div id="add " class="grid-box ">
+            <div data-field="template ">
+                <div data-header>全選
+                    <checkbox></checkbox>
+                </div>
+                <div data-item>
+                    <checkbox></checkbox>
+                </div>
+                <div data-field="need ">材料代號</div>
+                <div data-field="finish ">材料名稱</div>
+            </div>
+        </div>
+        <div id=" " class="grid-box ">
+            <div data-field="size ">尺寸</div>
+            <div data-field="need ">應製數量</div>
+            <div data-field="template ">
+                <div data-header>配套完工數</div>
+                <div data-item>
+                    <input type="number " style="width: 100%; "></div>
+            </div>
+        </div>
+        <div id="addDetailGrid " class="grid-box ">
+            <div class="bound-main " data-style="row-grid ItemLight ">
+                <div data-field="DeptNo ">材料代號</div>
+                <div data-field="DeptNo ">結構代號</div>
+                <div data-field="DeptNo ">結構名稱</div>
+                <div data-field="DeptNo ">每雙片數</div>
+                <div data-field="DeptNo ">應製數量</div>
+                <div data-field="DeptNo ">完工數</div>
+                <div data-field="DeptNo ">差異數</div>
+            </div>
+            <div class="bound-detail " data-style="column-grid ">
+                <div data-field="size ">尺寸</div>
+                <div data-field="need ">應製數量</div>
+                <div data-field="need ">配套完工數</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

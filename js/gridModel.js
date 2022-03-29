@@ -27,10 +27,11 @@ function gridsFun(url, data, gridID) {
     initGrid();
 
     function initGrid() {
+        let boundMainField = boundMain.dataset.field;
         let mainTable = grid.querySelector(`.grid-main`);
         if (mainTable !== null) thead.remove();
 
-        getFetch(url, data).then(jsonData => creatGrid(jsonData, boundMain)).then(() => {
+        getFetch(url, data).then(jsonData => jsonData.Data).then(jsonData => creatGrid(jsonData[boundMainField], boundMain)).then(() => {
             EventListener()
         })
     }

@@ -21,19 +21,29 @@
             border-radius: 3px;
         }
         
-        label {
+        div {
+            margin-top: 5px;
             color: black;
         }
         
-        label input {
-            width: 130px;
+        .divBorder {
+            border: 1px solid #808080;
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: -1px;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 
 </head>
 
 <body>
-    <div id="maindiv">
+    <div id="mainDiv">
         <div>
             <select id="ddlTop"></select>
             <button id="selbtn" class="button">查詢</button>
@@ -44,33 +54,66 @@
             <div class="radioList radStatus">
                 <input type="radio" value="">新增
                 <input type="radio" value="">未完工
-                <input type="radio" value="">未列印
+                <input type="radio" value="">未印表
                 <input type="radio" value="">全部
             </div>
         </div>
+
         <div>
-            <label>派制部門 : <input type="text"></label>
+            <label>派製部門 : <input type="text"><button>>></button><input type="text"></label>
             <label>段別 : <input type="text"></label>
             <label>生產單位 : <input type="text"></label>
         </div>
+
         <div id="grid1" class="grid-box">
             <div class="bound-main" data-style="row-grid">
-                <div data-field="size">尺寸</div>
-                <div data-field="need">應製數量</div>
-                <div data-field="finish">完工數</div>
-                <div data-field="template">
-                    <div data-header>欠數</div>
-                    <div data-item><input type="number" style="width: 100%;"></div>
+                <div data-field="size">派工單號</div>
+                <div data-field="need">訂單編號</div>
+                <div data-field="finish">項次</div>
+                <div data-field="finish">型體</div>
+                <div data-field="finish">應製數量</div>
+                <div data-field="finish">建檔日期</div>
+            </div>
+        </div>
+
+        <div class="main-tabs-box" id="tabsBox" visible="false">
+            <div class="detail-box" data-title="裁斷" style="width: 100%;">
+                <div id="grid1" class="grid-box">
+                    <div class="bound-main" data-style="row-grid">
+                        <div data-field="size">段別</div>
+                        <div data-field="need">結構代號</div>
+                        <div data-field="finish">材料</div>
+                        <div data-field="finish">每雙片數</div>
+                        <div data-field="finish">應製雙數</div>
+                        <div data-field="finish">完工數</div>
+                        <div data-field="finish">差異數</div>
+                        <div data-field="finish">狀態</div>
+                    </div>
+                    <div class="bound-detail" data-style="column-grid">
+                        <div data-field="size">楦號</div>
+                        <div data-field="need">應製雙數</div>
+                        <div data-field="finish">完工數</div>
+                    </div>
                 </div>
-                <div data-field="finish" class="elem-none">完工數</div>
+            </div>
+            <div class="detail-box" data-title="非裁斷">
+                <div id="grid2" class="grid-box">
+                    <div class="bound-main" data-style="row-grid">
+                        <div data-field="size">半成品別</div>
+                        <div data-field="need">應製雙數</div>
+                        <div data-field="finish">完工數</div>
+                    </div>
+                    <div class="bound-detail" data-style="column-grid">
+                        <div data-field="size">鞋號</div>
+                        <div data-field="need">應製雙數</div>
+                        <div data-field="finish">完工數</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="adddiv">
 
-    </div>
-    <div id="printdiv">
-
+    <div id="editDiv">
 
     </div>
 

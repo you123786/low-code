@@ -23,19 +23,29 @@
             border-radius: 3px;
         }
         
-        input[type="text"],
-        input[type="date"] {
-            width: 130px;
+        div {
+            margin-top: 5px;
+            color: black;
         }
         
-        #mainDiv>div {
-            margin-top: 5px;
+        .divBorder {
+            border: 1px solid #808080;
+            padding: 5px;
+            margin-top: 0px;
+            margin-bottom: -1px;
+        }
+        
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <div id="mainDiv" style="color:black;">
+
+    <div id="mainDiv">
         <div>
             <select id="ddlTop"></select>
             <button class="button">查詢</button>
@@ -52,9 +62,13 @@
             </div>
         </div>
         <div>
-            部門:<input type="text">
-            <button class="button">>></button>
-            <input type="text">
+            <label>生產單位 : 
+                <input type="text">
+                <button class="button">>></button>
+                <input type="text">
+            </label>
+            <label>段別 : <select name="" id=""></select></label>
+            <label>周派工周別 : <select name="" id=""></select> </label>
 
             <select name="" id="">
                 <option value="">繳庫日期</option>
@@ -85,41 +99,35 @@
             </div>
         </div>
     </div>
+    <script>
+        {
+            ddlTopFun('ddlTop');
+
+        }
+    </script>
+
     <div id="addDiv">
         <div>
-            <table class="dataTable alignCenterTable" border="1">
-                <tr>
-                    <td>繳庫單號:</td>
-                    <td><input type="text"></td>
-                    <td>部門:</td>
-                    <td></td>
-                    <td>繳庫日期:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>訂單:</td>
-                    <td></td>
-                    <td>項次:</td>
-                    <td></td>
-                    <td>客戶訂單</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>公司形體號:</td>
-                    <td></td>
-                    <td>段別:</td>
-                    <td></td>
-                    <td>完成物</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>繳庫人:</td>
-                    <td></td>
-                    <td>規格說明:</td>
-                    <td></td>
-                </tr>
-
-            </table>
+            <div>
+                <label>繳庫單號 : <input id="acceptID" type="text"></label>
+                <label>部門 : <input id="deptNo" type="text"> <button></button> <input id="deptName" type="text"></label>
+                <label>繳庫日期 : <input id="acceptDate" type="text"></label>
+            </div>
+            <div>
+                <label>訂單 : <input id="OrderNo" type="text"> </label>
+                <label>項次 : <input id="ItemNO" type="text"> </label>
+                <label>客戶訂單 : <input id="customerOrder" type="text"> </label>
+            </div>
+            <div>
+                <label>公司形體號 : <input id="" type="text"> </label>
+                <label>段別 : <input  type="text"> </label>
+                <label>完成物 : <input type="text"> </label>
+            </div>
+            <div>
+                <label>繳庫人 : <input type="text"> </label>
+                <label>規格說明 : <input type="text"> </label>
+                <label>完成物 : <textarea name="message" rows="2" cols="50" Style="resize: none;"></textarea> </label>
+            </div>
         </div>
         <div id="detailGrid" class="grid-box">
             <div class="bound-main" data-style="column-grid">
@@ -131,34 +139,124 @@
                 </div>
             </div>
         </div>
-        <div>
-            製程明細: <input type="text">全選
+
+        <div class="divBorder">
+            製程明細: <input type="checkbox">全選
             <div></div>
         </div>
-        <div>
-            之前審核意見:
-            <div>
 
+        <div class="divBorder">
+            之前審核意見:
+            <div id="approvedGrid" class="grid-box">
+                <div class="bound-main" data-style="row-grid">
+                    <div data-field="StatusDescription">簽核狀態</div>
+                    <div data-field="CheckUserName">簽核人</div>
+                    <div data-field="YesNo">是否通過</div>
+                    <div data-field="aDate">簽核日期</div>
+                    <div data-field="Memo">簽核意見</div>
+                </div>
             </div>
         </div>
+
+        <div id="addButtonDiv" class="divBorder center">
+            <button class="button">選擇鞋號</button>
+            <button class="button">審核通過</button>
+            <button class="button">審核駁回</button>
+            <button class="button">提交</button>
+            <button class="button">保存</button>
+            <button class="button">返回</button>
+        </div>
     </div>
-    <div>
-        <button class="button">選擇鞋號</button>
-        <button class="button">審核通過</button>
-        <button class="button">審核駁回</button>
-        <button class="button">提交</button>
-        <button class="button">保存</button>
-        <button class="button">返回</button>
-    </div>
+
+
     <div id="specDiv">
         <label>繳庫單據:<input type="text"></label>
         <label>核准時間<input type="text"></label>
         <button id="specSaveBtn" class="button">確定</button>
     </div>
+
+
     <script>
         {
-            ddlTopFun('ddlTop');
+            RefreshList();
 
+            function RefreshList() {
+                gridFun('', JSON.stringify({
+                    tStatus: SqlBuilder.GetStatusVal()
+                }), 'main-table')
+            }
+
+            let operateFun = {
+                Save: () => {
+                    Save();
+                },
+                Edit: () => {
+                    Edit();
+                },
+                Delete: () => {
+                    Delete();
+                },
+                Update: () => {
+                    Update();
+                },
+                Reject: () => {
+                    Reject();
+                },
+                Approval: () => {
+                    Approval();
+                },
+            };
+
+            let MF_WeekWorkSize =
+                function Save() {
+                    let body = JSON.stringify({
+                        acceptID: document.querySelector("#acceptID").value,
+                        ScdNodeName: document.getElementsByName("ScdNodeName")[0].value,
+                        RealTimeSource: document.querySelector("[name=RealTimeSource]:checked").value,
+                        VaryIsEMail: document.querySelector("[name=VaryIsEMail]:checked").value,
+                        GetTimeType: document.querySelector("[name=GetTimeType]:checked").value,
+                        Remark: document.getElementsByName("Remark")[0].value,
+                        MF_WeekWorkSize: [{
+
+                        }, {
+
+                        }]
+                    });
+                    JwtWebApi.Operate({
+                        _url: "",
+                        _body: body
+                    }).then(function(data) {
+                        return data.json();
+                    }).then(
+                        function(json) {
+                            if (json !== null && json.Success) {
+                                RefreshList();
+                                alert("Success!!");
+                            } else {
+                                alert("Fail!!");
+                            }
+                        })
+                }
+
+            function Edit() {
+                CheckSelectItem();
+                let selectItem = document.querySelector(".grid-main").querySelector(".grid-tr.selected-item");
+
+                JwtWebApi.Operate({
+                    _url: "",
+                    _body: JSON.stringify({
+                        node: selectItem.firstElementChild.textContent
+                    })
+                }).then(x => x.json()).then(function(json) {
+                    let editBox = document.querySelector(".operate-box.edit");
+                    editBox.querySelector("#ScdNode").value = json.Data.ScdNode;
+                    editBox.querySelector("#ScdNodeName").value = json.Data.ScdNodeName;
+                    editBox.querySelector(`[name=RealTimeSource][value='${json.Data.RealTimeSource}`).checked = true;
+                    editBox.querySelector(`[name=VaryIsEMail][value='${json.Data.VaryIsEMail}`).checked = true;
+                    editBox.querySelector(`[name=GetTimeType][value='${json.Data.GetTimeType}`).checked = true;
+                    editBox.querySelector("#Remark").value = json.Data.Remark;
+                });
+            }
         }
     </script>
 </body>
