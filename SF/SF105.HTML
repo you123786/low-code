@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>非裁斷(段別)半成品完工數[SF105]</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/gridModel.js"></script>
+    <style>
+        button {
+            line-height: 1;
+            width: auto !important;
+            height: auto !important;
+            margin-right: 0.3rem;
+            padding: 0.5rem 0.8rem;
+            cursor: pointer;
+            border-color: rgba(0, 0, 0, .2);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+        }
+        
+        #mainDiv,
+        #operateDiv {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +37,9 @@
         <div>
             <button id="selBtn" class="button">查詢</button>
             <div class="radioList radStatus">
-                <input type="status" value="">已完工
-                <input type="status" value="">未完工
-                <input type="status" value="">全部
+                <input type="radio" value="">已完工
+                <input type="radio" value="">未完工
+                <input type="radio" value="">全部
             </div>
         </div>
         <div>
@@ -25,22 +47,23 @@
             <label>段別 : <input type="text"></label>
             <label>周派工週別 : <input type="text"></label>
         </div>
-        <div id="SF100grid" class="grid-box">
-            <div class="bound-main" data-style="row-grid">
+        <div id="grid" class="grid-box">
+            <div class="bound-main" data-style="row-grid ItemLight" data-field="grid">
+                <div data-field="id" data-hidden="true"></div>
                 <div data-field="WorkNo">派工單號</div>
-                <div data-field="SalesNoteNo">訂單編號</div>
-                <div data-field="ItemNo">項次</div>
-                <div data-field="PatternNo">型體</div>
-                <div data-field="MaxClassNo">半成品別</div>
+                <div data-field="SalesNoteNO">訂單編號</div>
+                <div data-field="ItemNO">項次</div>
+                <div data-field="PatternNO">型體</div>
+                <div data-field="Fpart">半成品別</div>
                 <div data-field="AssignQtyPairs">應製數量</div>
-                <div data-field="allFinish">完工數</div>
-                <div data-field="allOwed">差異數</div>
+                <div data-field="AllFinish">完工數</div>
+                <div data-field="AllOwed">差異數</div>
             </div>
         </div>
 
         <button id="addBtn" class="button">新增</button>
-        <div id="grid2" class="grid-box">
-            <div class="bound-main" data-style="row-grid">
+        <div id="grid1" class="grid-box">
+            <div class="bound-main" data-style="row-grid ItemLight" data-field="grid1">
                 <div data-field="aDate">回饋日期</div>
                 <div data-field="SeqNo">回饋序號</div>
                 <div data-field="finish">完工數</div>
@@ -51,13 +74,12 @@
                 <div data-field="template">
                     <div data-header>操作</div>
                     <div data-item>
-                        <button class="button">修改</button>
                         <button class="button">刪除</button>
                     </div>
                 </div>
             </div>
             <div class="bound-detail" data-style="column-grid">
-                <div data-field="SizeCode">尺寸</div>
+                <div data-field="PrintSize">尺寸</div>
                 <div data-field="AssignQtyPairs">應製數量</div>
                 <div data-field="ProductionQty">完工數</div>
                 <div data-field="SubQty">差異數</div>
@@ -66,7 +88,7 @@
     </div>
 
 
-    <div id="operateDiv">
+    <div id="operateDiv" class="elem-none">
         <div>
             <label>生產單位 : <input type="text"></label>
             <label>段別 : <input type="text"></label>
@@ -107,127 +129,36 @@
 
     <script>
         {
+            let addBtn = document.querySelector('#addBtn');
+            let backBtn = document.querySelector('#backBtn');
+            let grid = document.querySelector('#grid');
             RefreshList();
 
-            function RefreshList() {
-                gridsFun('http://localhost:3000/SF105Data', JSON.stringify({
-                    tStatus: SqlBuilder.GetStatusVal()
-                }), 'main-table');
+            async function RefreshList() {
+                await gridsFun('http://localhost:3000/Data', "", 'grid');
+                changeDiv();
+                changeSelItem();
+                gridsFun('http://localhost:3000/tr1', "", 'grid1');
             }
 
-            let OperateFun = {
-                Save: function() {
-                    Save()
-                },
-                Edit: function() {
-                    Edit()
-                },
-                Delete: function() {
-                    Delete()
-                },
-                Update: function() {
-                    Update()
-                },
-                Approval: function() {
-                    Approval()
-                },
-            };
+            function changeDiv() {
+                function change() {
+                    document.querySelector('#mainDiv').classList.toggle('elem-none');
+                    document.querySelector('#operateDiv').classList.toggle('elem-none');
+                }
+                addBtn.addEventListener('click', change);
+                backBtn.addEventListener('click', change);
+            }
 
-            function Save() {
-                let body = JSON.stringify({
-                    ScdNode: document.getElementsByName("ScdNode")[0].value,
-                    ScdNodeName: document.getElementsByName("ScdNodeName")[0].value,
-                    RealTimeSource: document.querySelector("[name=RealTimeSource]:checked").value,
-                    VaryIsEMail: document.querySelector("[name=VaryIsEMail]:checked").value,
-                    GetTimeType: document.querySelector("[name=GetTimeType]:checked").value,
-                    Remark: document.getElementsByName("Remark")[0].value
-                });
-                JwtWebApi.Operate({
-                    _url: 'http://localhost:3000/SF105Data',
-                    _body: body
-                }).then(function(data) {
-                    return data.json();
-                }).then(
-                    function(json) {
-                        if (json !== null && json.Success) {
-                            RefreshList();
-                            alert("Success!!");
-                        } else {
-                            alert("Fail!!");
-                        }
+            function changeSelItem() {
+                console.log(grid.querySelector(`.grid-main`));
+                grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`).forEach((item) => {
+                    item.addEventListener('click', function() {
+                        console.log(this.querySelector('div[data-field="id"]'));
                     })
-            }
-
-            function Edit() {
-                CheckSelectItem();
-                let selectItem = document.querySelector(".grid-main").querySelector(".grid-tr.selected-item");
-
-                JwtWebApi.Operate({
-                    _url: 'http://localhost:3000/SF105Data',
-                    _body: JSON.stringify({
-                        node: selectItem.firstElementChild.textContent
-                    })
-                }).then(x => x.json()).then(function(json) {
-                    let editBox = document.querySelector(".operate-box.edit");
-                    editBox.querySelector("#ScdNode").value = json.Data.ScdNode;
-                    editBox.querySelector("#ScdNodeName").value = json.Data.ScdNodeName;
-                    editBox.querySelector(`[name=RealTimeSource][value='${json.Data.RealTimeSource}`).checked = true;
-                    editBox.querySelector(`[name=VaryIsEMail][value='${json.Data.VaryIsEMail}`).checked = true;
-                    editBox.querySelector(`[name=GetTimeType][value='${json.Data.GetTimeType}`).checked = true;
-                    editBox.querySelector("#Remark").value = json.Data.Remark;
                 });
-            }
 
-            function Delete() {
-                if (!confirm("確定要刪除嗎?"))
-                    return;
-                CheckSelectItem();
-                let selectItem = document.querySelector(".grid-main").querySelector(".grid-tr.selected-item");
-                JwtWebApi.Operate({
-                    _method: 'http://localhost:3000/SF105Data',
-                    _body: JSON.stringify({
-                        node: selectItem.firstElementChild.textContent
-                    })
-                }).then(x => x.json()).then(function(json) {
-                    alert(json.Message);
-                    RefreshList();
-                });
             }
-
-            function Update() {
-                let editBox = document.querySelector(".operate-box.edit");
-                let body = JSON.stringify({
-                    ScdNode: editBox.querySelector("#ScdNode").value,
-                    ScdNodeName: editBox.querySelector("#ScdNodeName").value,
-                    RealTimeSource: editBox.querySelector("[name=RealTimeSource]:checked").value,
-                    VaryIsEMail: editBox.querySelector("[name=VaryIsEMail]:checked").value,
-                    GetTimeType: editBox.querySelector("[name=GetTimeType]:checked").value,
-                    Remark: editBox.querySelector("#Remark").value
-                });
-                JwtWebApi.Operate({
-                    _url: 'http://localhost:3000/SF105Data',
-                    _body: body
-                }).then((x) => {
-                    return x.json()
-                }).then((r) => {
-                    alert(r.Message);
-                    RefreshList();
-                });
-            }
-
-            //RadioStatus狀態改變事件註冊
-            function RadioStatusAddListen() {
-                document.querySelector(".radStatus").querySelectorAll("input").forEach(function(item) {
-                    item.addEventListener("change", function() {
-                        let tStatusVal = document.querySelector("input[type=radio][name=radio-tStstus]:checked").value;
-                        console.log(tStatusVal);
-                        gridsFun('@Url.Action("GridData", "SF003")', JSON.stringify({
-                            tStatus: tStatusVal
-                        }), 'main-table');
-                    });
-                });
-            }
-            RadioStatusAddListen();
 
         }
     </script>

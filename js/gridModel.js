@@ -19,12 +19,13 @@ function getFetch(url, data) {
 }
 
 //產生動態grid資料
-function gridsFun(url, data, gridID) {
+async function gridsFun(url, data, gridID, callback = () => {}) {
     const grid = document.querySelector(`#${gridID}`);
     let boundMain = grid.querySelector(`.bound-main`);
     let boundDetail = grid.querySelector(`.bound-detail`);
 
-    initGrid();
+    await initGrid();
+    await callback();
 
     function initGrid() {
         let boundMainField = boundMain.dataset.field;
