@@ -5,14 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SF102</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/gridModel.js"></script>
 </head>
+<style>
+    button {
+        line-height: 1;
+        width: auto !important;
+        height: auto !important;
+        margin-right: 0.3rem;
+        padding: 0.5rem 0.8rem;
+        cursor: pointer;
+        border-color: rgba(0, 0, 0, .2);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 3px;
+    }
+    
+    #mainDiv,
+    #operateDiv {
+        color: black;
+    }
+    
+    input[type="text"] {
+        width: 130px
+    }
+    
+    .divFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .divTop {
+        margin: 3px;
+    }
+</style>
 
 <body>
     <div id="mainDiv">
         <div>
-            <button>查詢</button>
-            <button>新增</button>
+            <button class="button">查詢</button>
+            <button id="addBtn" class="button">新增</button>
             <div class="radioList radStatus">
                 <input type="radio" value="">全數完工
                 <input type="radio" value="">新增
@@ -21,15 +56,12 @@
             </div>
         </div>
         <div>
-            <label>生產單位 : <input type="text"></label>
-            <label>段別 : <input type="text"></label>
+            <label>生產單位 : <input type="text" value="製A課/裁A組"></label>
+            <label>段別 : <input type="text" value="裁剪"></label>
+            <label>周派工週別 : <input type="text" value="6 2022/01/17~2022/01/23"> <button >>></button></label>
         </div>
-        <div>
-            <label>周派工週別<input type="text"></label>
-            <button>查詢</button>
-        </div>
-        <div id="" class="grid-box">
-            <div class="bound-main data-style=" column-grid ">
+        <div id="grid" class="grid-box">
+            <div class="bound-main" data-style=" column-grid" data-field="grid">
                 <div data-field="size ">派工單號</div>
                 <div data-field="need ">訂單編號</div>
                 <div data-field="finish ">項次</div>
@@ -40,17 +72,23 @@
                 <div data-field="finish ">進度狀態</div>
             </div>
         </div>
-        
-        <div>
-            <div class="bound-main data-style=" column-grid ">
-                <div data-field="size ">派工單號</div>
-                <div data-field="need ">訂單編號</div>
-                <div data-field="finish ">項次</div>
-                <div data-field="size ">型體</div>
-                <div data-field="need ">應製數量</div>
-                <div data-field="finish ">配套數量</div>
-                <div data-field="need ">建檔日期</div>
-                <div data-field="finish ">進度狀態</div>
+
+        <div id="grid" class="grid-box">
+            <div class="bound-main" data-style="column-grid">
+                <div data-field="size ">回饋序號</div>
+                <div data-field="need ">回饋日期</div>
+                <div data-field="finish ">配套完工數</div>
+                <div data-field="size ">狀態</div>
+                <div data-field="need ">異動人</div>
+                <div data-field="finish ">操作</div>
+            </div>
+            <div class="bound-detail" data-style="column-grid">
+                <div data-field="size ">回饋序號</div>
+                <div data-field="need ">回饋日期</div>
+                <div data-field="finish ">配套完工數</div>
+                <div data-field="size ">狀態</div>
+                <div data-field="need ">異動人</div>
+                <div data-field="finish ">操作</div>
             </div>
         </div>
 
@@ -59,61 +97,100 @@
         </div>
     </div>
 
-    <div id="addDiv ">
+    <div id="operateDiv ">
         <div>
-            <label>訂單編號 : <input type="text "></label>
-            <label>項次 : <input type="text "></label>
-            <label>派工單號 : <input type="text "></label>
-            <label>項次 : <input type="text "></label>
+            <label>訂單編號 : <input type="text " value=" "></label>
+            <label>項次 : <input type="text " value="01 "></label>
+            <label>派工單號 : <input type="text " value=" "></label>
+            <label>項次 : <input type="text " value="2 "></label>
         </div>
         <div>
             <label>公司型體 : <input type="text "></label>
-            <label>回饋序號 : <input type="text "> </label>
+            <label>回饋序號 : <input type="text " value="1 "> </label>
         </div>
         <div>
-            <label>應製數量 : <input type="text "></label>
+            <label>應製總數量 : <input type="text "></label>
             <button class="button ">保存</button>
-            <button class="button ">返回</button>
-        </div>
-        <div id="add " class="grid-box ">
-            <div data-field="template ">
-                <div data-header>全選
-                    <checkbox></checkbox>
-                </div>
-                <div data-item>
-                    <checkbox></checkbox>
-                </div>
-                <div data-field="need ">材料代號</div>
-                <div data-field="finish ">材料名稱</div>
-            </div>
+            <button id="backBtn " class="button ">返回</button>
         </div>
         <div id=" " class="grid-box ">
-            <div data-field="size ">尺寸</div>
+            <div data-field="size ">楦號</div>
             <div data-field="need ">應製數量</div>
             <div data-field="template ">
                 <div data-header>配套完工數</div>
                 <div data-item>
                     <input type="number " style="width: 100%; "></div>
             </div>
+            <div data-field="need ">待完工數</div>
         </div>
+
         <div id="addDetailGrid " class="grid-box ">
             <div class="bound-main " data-style="row-grid ItemLight ">
                 <div data-field="DeptNo ">材料代號</div>
-                <div data-field="DeptNo ">結構代號</div>
+                <div data-field="DeptNo ">材料名稱</div>
+                <div data-field="DeptNo ">結構代碼</div>
                 <div data-field="DeptNo ">結構名稱</div>
-                <div data-field="DeptNo ">每雙片數</div>
-                <div data-field="DeptNo ">應製數量</div>
-                <div data-field="DeptNo ">完工數</div>
-                <div data-field="DeptNo ">差異數</div>
-            </div>
-            <div class="bound-detail " data-style="column-grid ">
-                <div data-field="size ">尺寸</div>
-                <div data-field="need ">應製數量</div>
-                <div data-field="need ">配套完工數</div>
             </div>
         </div>
     </div>
+    <script>
+        {
+            let addBtn = document.querySelector('#addBtn');
+            let backBtn = document.querySelector('#backBtn');
+            let grid = document.querySelector('#grid');
 
+            initFun();
+
+            async function initFun() {
+                TabsFun('tabsBox');
+                await RefreshList();
+                changeSelItem();
+                changeDiv();
+            };
+
+            async function RefreshList() {
+                await gridsFun('http://localhost:3000/Data', " ", 'grid');
+            }
+
+
+
+            function changeSelItem() {
+                grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`).forEach((item) => {
+                    item.addEventListener('click', function() {
+
+                        let tr = this.querySelector('div[data-field="id "]').innerHTML;
+                        gridsFun(`http://localhost:3000/${tr}`, " ", 'grid1');
+                        gridsFun(`http://localhost:3000/${tr}`, " ", 'grid2');
+                    })
+                });
+
+            }
+
+            function changeDiv() {
+                function change() {
+                    document.querySelector('#mainDiv').classList.toggle('elem-none');
+                    document.querySelector('#operateDiv').classList.toggle('elem-none');
+                }
+
+                function setAddDiv() {
+                    gridsFun(`http://localhost:3000/addtr1`, " ", 'grid3');
+                }
+
+                function saveBtnClick() {
+                    let MainSelItem = grid.querySelector(' .grid-main >.grid-tbody >.grid-tr.selected-item');
+                    if (MainSelItem !== null) {
+                        change();
+                        setAddDiv();
+                    } else {
+                        alert("請先選擇要修改的資料 ");
+                    }
+                }
+
+                addBtn.addEventListener('click', saveBtnClick);
+                backBtn.addEventListener('click', change);
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,1065 @@
+{
+    "Data": {
+        "Success": true,
+        "Token": "123544",
+        "Code": "200",
+        "Message": "更新成功",
+        "DateTime": "2022-03-16 14:15",
+        "Data": {
+            "grid": [{
+                    "id": "tr1",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212596",
+                    "ItemNO": "01",
+                    "WorkNo": "MW22020092",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 1104.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr2",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212596",
+                    "ItemNO": "02",
+                    "WorkNo": "MW22020093",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 732.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr3",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212598",
+                    "ItemNO": "01",
+                    "WorkNo": "MW22020094",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 768.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr4",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212598",
+                    "ItemNO": "02",
+                    "WorkNo": "MW22020095",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 432.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr5",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212599",
+                    "ItemNO": "01",
+                    "WorkNo": "MW22020096",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 774.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr6",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS212599",
+                    "ItemNO": "02",
+                    "WorkNo": "MW22020097",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 414.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr7",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212599",
+                    "ItemNO": "03",
+                    "WorkNo": "MW22020098",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 66.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr8",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212603",
+                    "ItemNO": "01",
+                    "WorkNo": "MW22020099",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 792.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr9",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS-212603",
+                    "ItemNO": "02",
+                    "WorkNo": "MW22020100",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 414.00,
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr10",
+                    "WeekofYear": "6",
+                    "AssignDept": "CB",
+                    "SalesNoteNO": "WAS212604",
+                    "ItemNO": "01",
+                    "WorkNo": "MW22020101",
+                    "SeqNo": 1,
+                    "AssignQtyPairs": 408.00,
+                    "tStatus": 1
+                }
+            ]
+        }
+    },
+    "tr1": {
+        "Data": {
+            "grid1": [{
+                    "DeptKind": "C",
+                    "StruNo": "1101",
+                    "MaterialID": "210103373",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1125",
+                    "MaterialID": "350800004",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1201",
+                    "MaterialID": "720Q00095",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1203",
+                    "MaterialID": "820L00121",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1204",
+                    "MaterialID": "610400078",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1245",
+                    "MaterialID": "350300022",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1258",
+                    "MaterialID": "310100018",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "12B8",
+                    "MaterialID": "210103373",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1301",
+                    "MaterialID": "210103372",
+                    "Pices": 4,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1303",
+                    "MaterialID": "720Q00094",
+                    "Pices": 4,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1304",
+                    "MaterialID": "820L00121",
+                    "Pices": 4,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1360",
+                    "MaterialID": "650300003",
+                    "Pices": 4,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1403",
+                    "MaterialID": "820L00121",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1404",
+                    "MaterialID": "A50101845",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1405",
+                    "MaterialID": "670200245",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1416",
+                    "MaterialID": "610300024",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1483",
+                    "MaterialID": "350300039",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1504",
+                    "MaterialID": "680100001",
+                    "Pices": 4,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "2001",
+                    "MaterialID": "H00103045",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3005",
+                    "MaterialID": "3E0100003",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3007",
+                    "MaterialID": "740100002",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4101",
+                    "MaterialID": "400104801",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4201",
+                    "MaterialID": "400201952",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4220",
+                    "MaterialID": "6B0300029",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4225",
+                    "MaterialID": "6B0300030",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Function": ""
+                }
+            ],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr2": {
+        "Data": {
+            "grid1": [{
+                    "DeptKind": "裁斷",
+                    "StruNo": "1101",
+                    "MaterialID": "210103373",
+                    "Pices": "2",
+                    "AssignQtyPairs": 1104.00,
+                    "Finish": "0"
+                },
+                {
+                    "DeptKind": "裁斷",
+                    "StruNo": "1125",
+                    "MaterialID": "350800004",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Finish": "0"
+                },
+                {
+                    "DeptKind": "裁斷",
+                    "StruNo": "1201",
+                    "MaterialID": "720Q00095",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Finish": "0"
+                },
+                {
+                    "DeptKind": "裁斷",
+                    "StruNo": "1203",
+                    "MaterialID": "820L00121",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Finish": "0"
+                },
+                {
+                    "DeptKind": "裁斷",
+                    "StruNo": "1204",
+                    "MaterialID": "610400078",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "Finish": "0"
+                }
+            ],
+            "grid2": [{
+                "Fpart": "1",
+                "MaxClassNo": "X3",
+                "AssignQtyPairs": "1104",
+                "Finish": "0",
+                "ExtraFlag": "1"
+            }, {
+                "Fpart": "2",
+                "MaxClassNo": "X5",
+                "AssignQtyPairs": "1104",
+                "Finish": "0",
+                "ExtraFlag": "1"
+            }, {
+                "Fpart": "3",
+                "MaxClassNo": "X6",
+                "AssignQtyPairs": "1104",
+                "Finish": "0",
+                "ExtraFlag": "1"
+            }, {
+                "Fpart": "4",
+                "MaxClassNo": "X2",
+                "AssignQtyPairs": "1104",
+                "Finish": "0",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr3": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr4": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr5": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr6": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr7": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr8": {
+        "Data": {
+            "grid1": [{
+                    "DeptKind": "C",
+                    "StruNo": "1101",
+                    "MaterialID": "210103373",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1125",
+                    "MaterialID": "350800004",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1201",
+                    "MaterialID": "720Q00095",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1203",
+                    "MaterialID": "820L00121",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1204",
+                    "MaterialID": "610400078",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1245",
+                    "MaterialID": "350300022",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1258",
+                    "MaterialID": "310100018",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "12B8",
+                    "MaterialID": "210103373",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1301",
+                    "MaterialID": "210103372",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1303",
+                    "MaterialID": "720Q00094",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1304",
+                    "MaterialID": "820L00121",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1360",
+                    "MaterialID": "650300003",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1403",
+                    "MaterialID": "820L00121",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1404",
+                    "MaterialID": "A50101845",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1405",
+                    "MaterialID": "670200245",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1416",
+                    "MaterialID": "610300024",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1483",
+                    "MaterialID": "350300039",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1504",
+                    "MaterialID": "680100001",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "2001",
+                    "MaterialID": "H00103045",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3005",
+                    "MaterialID": "3E0100003",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3007",
+                    "MaterialID": "740100002",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4101",
+                    "MaterialID": "400104801",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4201",
+                    "MaterialID": "400201952",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4220",
+                    "MaterialID": "6B0300029",
+                    "function": "",
+                    "AssignDept": "CB   "
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4225",
+                    "MaterialID": "6B0300030",
+                    "function": "",
+                    "AssignDept": "CB   "
+                }
+            ],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr9": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "tr10": {
+        "Data": {
+            "grid1": [{
+                "DeptKind": "C",
+                "StruNo": "1101",
+                "MaterialID": "210103373",
+                "Pices": "2",
+                "AssignQtyPairs": "CB   ",
+                "Finish": ""
+            }],
+            "grid2": [{
+                "Fpar": "1",
+                "MaxClassNo": "X3",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "2",
+                "MaxClassNo": "X5",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "3",
+                "MaxClassNo": "X6",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }, {
+                "Fpar": "4",
+                "MaxClassNo": "X2",
+                "ItemNO": "1104",
+                "Finish": "",
+                "ExtraFlag": "1"
+            }]
+        }
+    },
+    "addtr1": {
+        "Data": {
+            "grid3": [{
+                    "SizeCode": 7.000,
+                    "LASTSizeCode": 7.000,
+                    "ProductionQty": 42.0,
+                    "AssignQtyPairs": 42.0
+                },
+                {
+                    "SizeCode": 7.500,
+                    "LASTSizeCode": 7.500,
+                    "ProductionQty": 48.0,
+                    "AssignQtyPairs": 48.0
+                },
+                {
+                    "SizeCode": 8.000,
+                    "LASTSizeCode": 8.000,
+                    "ProductionQty": 54.0,
+                    "AssignQtyPairs": 54.0
+                },
+                {
+                    "SizeCode": 8.500,
+                    "LASTSizeCode": 8.500,
+                    "ProductionQty": 54.0,
+                    "AssignQtyPairs": 54.0
+                },
+                {
+                    "SizeCode": 9.000,
+                    "LASTSizeCode": 9.000,
+                    "ProductionQty": 78.0,
+                    "AssignQtyPairs": 78.0
+                },
+                {
+                    "SizeCode": 9.500,
+                    "LASTSizeCode": 9.500,
+                    "ProductionQty": 78.0,
+                    "AssignQtyPairs": 78.0
+                },
+                {
+                    "SizeCode": 10.000,
+                    "LASTSizeCode": 10.000,
+                    "ProductionQty": 150.0,
+                    "AssignQtyPairs": 150.0
+                },
+                {
+                    "SizeCode": 10.500,
+                    "LASTSizeCode": 10.500,
+                    "ProductionQty": 150.0,
+                    "AssignQtyPairs": 150.0
+                },
+                {
+                    "SizeCode": 11.000,
+                    "LASTSizeCode": 11.000,
+                    "ProductionQty": 150.0,
+                    "AssignQtyPairs": 150.0
+                },
+                {
+                    "SizeCode": 11.500,
+                    "LASTSizeCode": 11.500,
+                    "ProductionQty": 78.0,
+                    "AssignQtyPairs": 78.0
+                },
+                {
+                    "SizeCode": 12.000,
+                    "LASTSizeCode": 12.000,
+                    "ProductionQty": 96.0,
+                    "AssignQtyPairs": 96.0
+                },
+                {
+                    "SizeCode": 13.000,
+                    "LASTSizeCode": 13.000,
+                    "ProductionQty": 72.0,
+                    "AssignQtyPairs": 72.0
+                },
+                {
+                    "SizeCode": 14.000,
+                    "LASTSizeCode": 14.000,
+                    "ProductionQty": 24.0,
+                    "AssignQtyPairs": 24.0
+                },
+                {
+                    "SizeCode": 15.000,
+                    "LASTSizeCode": 15.000,
+                    "ProductionQty": 18.0,
+                    "AssignQtyPairs": 18.0
+                },
+                {
+                    "SizeCode": 16.000,
+                    "LASTSizeCode": 16.000,
+                    "ProductionQty": 12.0,
+                    "AssignQtyPairs": 12.0
+                },
+                {
+                    "SizeCode": 7.000,
+                    "LASTSizeCode": 7.000,
+                    "ProductionQty": 36.0,
+                    "AssignQtyPairs": 36.0
+                },
+                {
+                    "SizeCode": 7.500,
+                    "LASTSizeCode": 7.500,
+                    "ProductionQty": 36.0,
+                    "AssignQtyPairs": 36.0
+                },
+                {
+                    "SizeCode": 8.000,
+                    "LASTSizeCode": 8.000,
+                    "ProductionQty": 42.0,
+                    "AssignQtyPairs": 42.0
+                },
+                {
+                    "SizeCode": 8.500,
+                    "LASTSizeCode": 8.500,
+                    "ProductionQty": 42.0,
+                    "AssignQtyPairs": 42.0
+                },
+                {
+                    "SizeCode": 9.000,
+                    "LASTSizeCode": 9.000,
+                    "ProductionQty": 48.0,
+                    "AssignQtyPairs": 48.0
+                },
+                {
+                    "SizeCode": 9.500,
+                    "LASTSizeCode": 9.500,
+                    "ProductionQty": 48.0,
+                    "AssignQtyPairs": 48.0
+                },
+                {
+                    "SizeCode": 10.000,
+                    "LASTSizeCode": 10.000,
+                    "ProductionQty": 102.0,
+                    "AssignQtyPairs": 102.0
+                },
+                {
+                    "SizeCode": 10.500,
+                    "LASTSizeCode": 10.500,
+                    "ProductionQty": 102.0,
+                    "AssignQtyPairs": 102.0
+                },
+                {
+                    "SizeCode": 11.000,
+                    "LASTSizeCode": 11.000,
+                    "ProductionQty": 102.0,
+                    "AssignQtyPairs": 102.0
+                },
+                {
+                    "SizeCode": 11.500,
+                    "LASTSizeCode": 11.500,
+                    "ProductionQty": 42.0,
+                    "AssignQtyPairs": 42.0
+                },
+                {
+                    "SizeCode": 12.000,
+                    "LASTSizeCode": 12.000,
+                    "ProductionQty": 42.0,
+                    "AssignQtyPairs": 42.0
+                },
+                {
+                    "SizeCode": 13.000,
+                    "LASTSizeCode": 13.000,
+                    "ProductionQty": 60.0,
+                    "AssignQtyPairs": 60.0
+                },
+                {
+                    "SizeCode": 14.000,
+                    "LASTSizeCode": 14.000,
+                    "ProductionQty": 18.0,
+                    "AssignQtyPairs": 18.0
+                },
+                {
+                    "SizeCode": 15.000,
+                    "LASTSizeCode": 15.000,
+                    "ProductionQty": 12.0,
+                    "AssignQtyPairs": 12.0
+                }
+            ]
+        }
+    }
+}

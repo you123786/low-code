@@ -5,42 +5,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>裁斷(段別)零件需求說明[SF100]</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gridModel.css">
+    <script src="../js/gridModel.js"></script>
+    <style>
+        button {
+            line-height: 1;
+            width: auto !important;
+            height: auto !important;
+            margin-right: 0.3rem;
+            padding: 0.5rem 0.8rem;
+            cursor: pointer;
+            border-color: rgba(0, 0, 0, .2);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+        }
+        
+        #mainDiv,
+        #printDiv {
+            color: black;
+        }
+        
+        input[type="text"] {
+            width: 130px
+        }
+        
+        .divFlex {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .divTop {
+            margin: 3px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div id="mainDiv">
+    <div id="mainDiv" class="divTop">
         <div>
             <select id="ddlTop"></select>
-            <button id="selbtn" class="button">查詢</button>
-            <button id="addbtn" class="button">新增</button>
-            <button id="editbtn" class="button">修改</button>
-            <button id="delbtn" class="button">刪除</button>
-        </div>
-        <div>
-            <label>生產單位 : <input type="text"></label>
-            <label>段別 : <input type="text"></label>
-        </div>
-        <div>
-
-        </div>
-        <div>
-
+            <button id="selBtn" class="button">查詢</button>
+            <button id="printBtn" class="button">列印</button>
+            <div class="radioList radStatus">
+                <input type="radio" value="">新增
+                <input type="radio" value="">未完工
+                <input type="radio" value="">未印表
+                <input type="radio" value="">全部
+            </div>
         </div>
 
+        <div class="divFlex divTop">
+            <label>年度 <input type="text" style="width:50px;" value="2022"></label>
+            <label>週派工週別 : <input type="text" value="6 2022/01/17~2022/01/23"> </label>
+            <label>派製單位 : <input type="text" value="製A課"><button>>></button><input type="text"></label>
+            <label>段別 : <input type="text" value="C裁剪"></label>
+        </div>
+
+        <div id="grid" class="grid-box">
+            <div class="bound-main" data-style="row-grid ItemLight" data-field="grid">
+                <div data-field="id" data-hidden="true" class="elem-none"></div>
+                <div data-field="WeekOfYear">週別</div>
+                <div data-field="WorkNo">派工單號</div>
+                <div data-field="SalesNoteNO">訂單編號</div>
+                <div data-field="ItemNO">項次</div>
+                <div data-field="PatternNO">型體</div>
+                <div data-field="AssignQtyPairs">派工總數</div>
+            </div>
+        </div>
+
+        <div class="main-tabs-box" id="tabsBox" visible="false">
+            <div class="detail-box" data-title="裁斷" style="width: 100%;">
+                <div id="grid1" class="grid-box">
+                    <div class="bound-main" data-style="row-grid ItemLight" data-field="grid1">
+                        <div data-field="DeptKind">段別</div>
+                        <div data-field="StruNo">結構代號</div>
+                        <div data-field="MaterialID">材料</div>
+                        <div data-field="AssignQtyPairs">派工雙數</div>
+                        <div data-field="allFinish">完工數</div>
+                        <div data-field="allOwed">差異數</div>
+                    </div>
+                    <div class="bound-detail" data-style="column-grid">
+                        <div data-field="LASTSizeCode">楦號</div>
+                        <div data-field="AssignQtyPairs">派工雙數</div>
+                        <div data-field="ProductionQty">完工數</div>
+                        <div data-field="owed">差異數</div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-box" data-title="半成品">
+                <div id="grid2" class="grid-box">
+                    <div class="bound-main" data-style="row-grid ItemLight" data-field="grid2">
+                        <div data-field="Fpart">半成品別</div>
+                        <div data-field="AssignQtyPairs">派工雙數</div>
+                        <div data-field="allFinish">完工數</div>
+                    </div>
+                    <div class="bound-detail" data-style="column-grid">
+                        <div data-field="SizeCode">鞋號</div>
+                        <div data-field="AssignQtyPairs">派工雙數</div>
+                        <div data-field="ProductionQty">完工數</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="addDiv">
-        <div>
-            <label>生產單位 : <input type="text"></label>
-            <label>段別 :  <input type="text"></label>
-        </div>
-        <div>
-            <label>訂單 : <input type="text"></label>
-            <label>項目 : <input type="text"></label>
-            <label>派工單號 : <input type="text"></label>
+    <div id="printDiv" class="elem-none">
+        <div class="divFlex divTop">
+            <label>派製部門 : <input type="text" value="製A課"></label>
+            <label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;段別 : <input type="text" value="裁剪"></label>
+            <div class="radioList radStatus">
+                <input type="radio" value="">已列印
+                <input type="radio" value="">未列印
+                <input type="radio" value="">全部
+            </div>
         </div>
 
+        <div class="divFlex divTop">
+            <label>&ensp;&ensp;&ensp;&ensp;年度 : <input type="text" value="2022"></label>
+            <label> 周派工周別 : <input type="text" width="200px" value="6 2022/01/17~2022/01/23"> </label>
+            <button class="button">查詢</button>
+        </div>
+
+        <div class="divFlex divTop">
+            <label>料號格式 : <input type="text" value="A.空白列示"> </label>
+            <label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;列印份數 : 
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+            </label>
+
+            <div>
+                <button class="button">預覽</button>
+                <button class="button">本機列印</button>
+                <button id="backBtn" class="button">返回</button>
+            </div>
+
+        </div>
+
+        <div id="grid3" class="grid-box">
+            <div class="bound-main" data-style="row-grid" data-field="grid3">
+                <div data-field="template">
+                    <div data-header>全選<input type="checkbox"></div>
+                    <div data-item><input type="checkbox"></div>
+                </div>
+                <div data-field="SalesNoteNO">訂單編號</div>
+                <div data-field="ItemNO">項次</div>
+                <div data-field="PatternNO">型體</div>
+                <div data-field="AssignQtyPairs">派工數</div>
+                <div data-field="template">
+                    <div data-header>列印份數</div>
+                    <div data-item>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                        </select>
+                    </div>
+                </div>
+                <div data-field="PrintDate">最近列印日期</div>
+            </div>
+        </div>
+        <script>
+            {
+                let printBtn = document.querySelector('#printBtn');
+                let backBtn = document.querySelector('#backBtn');
+                let grid = document.querySelector('#grid');
+
+                initFun();
+
+                async function initFun() {
+                    TabsFun('tabsBox');
+                    await RefreshList();
+                    changeSelItem();
+                    changeDiv();
+                };
+
+                async function RefreshList() {
+                    await gridsFun('http://localhost:3000/Data', "", 'grid');
+                }
+
+
+
+                function changeSelItem() {
+                    grid.querySelectorAll(`.grid-main>.grid-tbody >.grid-tr`).forEach((item) => {
+                        item.addEventListener('click', function() {
+
+                            let tr = this.querySelector('div[data-field="id"]').innerHTML;
+                            gridsFun(`http://localhost:3000/${tr}`, "", 'grid1');
+                            gridsFun(`http://localhost:3000/${tr}`, "", 'grid2');
+                        })
+                    });
+
+                }
+
+                function changeDiv() {
+                    function change() {
+                        document.querySelector('#mainDiv').classList.toggle('elem-none');
+                        document.querySelector('#printDiv').classList.toggle('elem-none');
+                    }
+
+                    function setAddDiv() {
+                        gridsFun(`http://localhost:3000/addtr1`, "", 'grid3');
+                    }
+
+                    function saveBtnClick() {
+                        let MainSelItem = grid.querySelector(' .grid-main >.grid-tbody >.grid-tr.selected-item');
+                        if (MainSelItem !== null) {
+                            change();
+                            setAddDiv();
+                        } else {
+                            alert("請先選擇要修改的資料");
+                        }
+                    }
+
+                    printBtn.addEventListener('click', saveBtnClick);
+                    backBtn.addEventListener('click', change);
+                }
+            }
+        </script>
     </div>
 
 </body>

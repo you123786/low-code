@@ -1,0 +1,2979 @@
+{
+    "Data": {
+        "Success": true,
+        "Token": "123544",
+        "Code": "200",
+        "Message": "更新成功",
+        "DateTime": "2022-03-16 14:15",
+        "Data": {
+            "grid": [{
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020144",
+                    "SalesNoteNO": "WAS-212434",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAP01B00",
+                    "AssignQtyPairs": 54.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020146",
+                    "SalesNoteNO": "WAS-212522",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAP01F00",
+                    "AssignQtyPairs": 624.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 6,
+                    "WorkNo": "MW22020147",
+                    "SalesNoteNO": "WAS-212453",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSBQ01F00",
+                    "AssignQtyPairs": 408.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020148",
+                    "SalesNoteNO": "WAS-212522",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSAQ01F00",
+                    "AssignQtyPairs": 450.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 6,
+                    "WorkNo": "MW22020149",
+                    "SalesNoteNO": "WAS-212441",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSBN05A10",
+                    "AssignQtyPairs": 1116.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 6,
+                    "WorkNo": "MW22020150",
+                    "SalesNoteNO": "WAS-212454",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSF702A00",
+                    "AssignQtyPairs": 408.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020151",
+                    "SalesNoteNO": "WAS-212543",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAE03B20",
+                    "AssignQtyPairs": 288.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020152",
+                    "SalesNoteNO": "WAS-212543",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSAB03B20",
+                    "AssignQtyPairs": 372.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020153",
+                    "SalesNoteNO": "WAS-212550",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSB101A00",
+                    "AssignQtyPairs": 528.00
+                },
+                {
+                    "id": "tr1",
+                    "WeekOfYear": 7,
+                    "WorkNo": "MW22020154",
+                    "SalesNoteNO": "WAS-212550",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSB201A00",
+                    "AssignQtyPairs": 174.00
+                }
+            ]
+        }
+    },
+    "tr1": {
+        "Data": {
+            "grid1": [{
+                    "DeptKind": "C",
+                    "StruNo": "1101",
+                    "MaterialID": "210103373",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1125",
+                    "MaterialID": "350800004",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1201",
+                    "MaterialID": "720Q00095",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1203",
+                    "MaterialID": "820L00121",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1204",
+                    "MaterialID": "610400078",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1245",
+                    "MaterialID": "350300022",
+                    "Pices": 2,
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1258",
+                    "MaterialID": "310100018",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "12B8",
+                    "MaterialID": "210103373",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1301",
+                    "MaterialID": "210103372",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1303",
+                    "MaterialID": "720Q00094",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1304",
+                    "MaterialID": "820L00121",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1360",
+                    "MaterialID": "650300003",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1403",
+                    "MaterialID": "820L00121",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1404",
+                    "MaterialID": "A50101845",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1405",
+                    "MaterialID": "670200245",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1416",
+                    "MaterialID": "610300024",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1483",
+                    "MaterialID": "350300039",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "1504",
+                    "MaterialID": "680100001",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "2001",
+                    "MaterialID": "H00103045",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3005",
+                    "MaterialID": "3E0100003",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "C",
+                    "StruNo": "3007",
+                    "MaterialID": "740100002",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4101",
+                    "MaterialID": "400104801",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4201",
+                    "MaterialID": "400201952",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4220",
+                    "MaterialID": "6B0300029",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "DeptKind": "D",
+                    "StruNo": "4225",
+                    "MaterialID": "6B0300030",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "allOwed": 1104.00,
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                }
+            ],
+            "grid2": [{
+                    "Fpart": "1",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "detail": [{
+                            "SizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "SizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "SizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "SizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "SizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "SizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "SizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "Fpart": "2",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "detail": [{
+                            "SizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "SizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "SizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "SizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "SizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "SizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "SizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "Fpart": "3",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "detail": [{
+                            "SizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "SizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "SizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "SizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "SizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "SizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "SizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "Fpart": "4",
+                    "AssignQtyPairs": 1104.00,
+                    "allFinish": "0",
+                    "detail": [{
+                            "SizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "SizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "SizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "SizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "SizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "SizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "SizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "SizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "SizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "SizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "addtr1": {
+        "Data": {
+            "grid3": [{
+                "SalesNoteNO": "WAS-212596",
+                "ItemNO": "01",
+                "PatternNO": "AGSAE01A50",
+                "AssignQtyPairs": 1104.00,
+                "PrintDate": null
+            }]
+        }
+    }
+}

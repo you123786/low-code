@@ -27,12 +27,13 @@ async function gridsFun(url, data, gridID, callback = () => {}) {
     await initGrid();
     await callback();
 
-    function initGrid() {
+
+    async function initGrid() {
         let boundMainField = boundMain.dataset.field;
         let mainTable = grid.querySelector(`.grid-main`);
-        if (mainTable !== null) thead.remove();
+        if (mainTable !== null) mainTable.remove();
 
-        getFetch(url, data).then(jsonData => jsonData.Data).then(jsonData => creatGrid(jsonData[boundMainField], boundMain)).then(() => {
+        await getFetch(url, data).then(jsonData => jsonData.Data).then(jsonData => creatGrid(jsonData[boundMainField], boundMain)).then(() => {
             EventListener()
         })
     }
@@ -55,8 +56,19 @@ async function gridsFun(url, data, gridID, callback = () => {}) {
             data.forEach(data => {
                 tbody += `<div class='grid-tr'>`;
                 boundGrid.querySelectorAll('div[data-field]').forEach(event => {
-                    let tdContent = event.dataset.field == 'template' ? event.querySelector('div[data-item]').innerHTML : data[event.dataset.field];
-                    tbody += `<div class='grid-td ${event.classList}' data-field='${event.dataset.field}'>${tdContent}</div>`
+                    let tdContent = data[event.dataset.field];
+                    if (event.dataset.field == 'template') {
+                        event.querySelectorAll("div[data-item] >*").forEach(item => {
+                            if (item.querySelector('[data-field]') != null & typeof item.querySelector('[data-field]') !== "undefined") {
+                                if (item.tagName.toLowerCase() === "input")
+                                    item.setAttribute("value", data[item.dataset.field]);
+                                else
+                                    item.textContent = data[item.dataset.field];
+                            }
+                        })
+                        tdContent = event.querySelector('div[data-item]').innerHTML;
+                    }
+                    tbody += `<div class='grid-td ${event.classList}' data-field='${event.dataset.field}'>${tdContent}</div>`;
                 })
                 tbody += `</div>`;
                 if (data['detail'] != undefined)
