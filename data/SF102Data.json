@@ -1,0 +1,382 @@
+{
+    "Data": {
+        "Success": true,
+        "Token": "123544",
+        "Code": "200",
+        "Message": "更新成功",
+        "DateTime": "2022-03-16 14:15",
+        "Data": {
+            "grid": [{
+                    "id": "tr1",
+                    "WorkNo": "MW22020144",
+                    "SalesNoteNO": "WAS-212434",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAP01B00",
+                    "AssignQtyPairs": 54.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020146",
+                    "SalesNoteNO": "WAS-212522",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAP01F00",
+                    "AssignQtyPairs": 624.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020147",
+                    "SalesNoteNO": "WAS-212453",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSBQ01F00",
+                    "AssignQtyPairs": 408.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020148",
+                    "SalesNoteNO": "WAS-212522",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSAQ01F00",
+                    "AssignQtyPairs": 450.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020149",
+                    "SalesNoteNO": "WAS-212441",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSBN05A10",
+                    "AssignQtyPairs": 1116.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020150",
+                    "SalesNoteNO": "WAS-212454",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSF702A00",
+                    "AssignQtyPairs": 408.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020151",
+                    "SalesNoteNO": "WAS-212543",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSAE03B20",
+                    "AssignQtyPairs": 288.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020152",
+                    "SalesNoteNO": "WAS-212543",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSAB03B20",
+                    "AssignQtyPairs": 372.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020153",
+                    "SalesNoteNO": "WAS-212550",
+                    "ItemNO": "01",
+                    "PatternNO": "AGSB101A00",
+                    "AssignQtyPairs": 528.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                },
+                {
+                    "id": "tr1",
+                    "WorkNo": "MW22020154",
+                    "SalesNoteNO": "WAS-212550",
+                    "ItemNO": "02",
+                    "PatternNO": "AGSB201A00",
+                    "AssignQtyPairs": 174.00,
+                    "allFinish": 0,
+                    "aDate": "2022-04-12",
+                    "tStatus": 1
+                }
+            ]
+        }
+    },
+    "tr1": {
+        "Data": {
+            "grid1": [{
+                    "SeqNo": "1",
+                    "aDate": "2022-04-12",
+                    "ProductionQty": 20.0,
+                    "tStatus": 0,
+                    "mUserName": "Vicky",
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                },
+                {
+                    "SeqNo": "2",
+                    "aDate": "2022-04-12",
+                    "ProductionQty": 20.0,
+                    "tStatus": 0,
+                    "mUserName": "Vicky",
+                    "detail": [{
+                            "LASTSizeCode": 7.000,
+                            "AssignQtyPairs": 42.0,
+                            "ProductionQty": 0,
+                            "owed": 42.0
+                        },
+                        {
+                            "LASTSizeCode": 7.500,
+                            "AssignQtyPairs": 48.0,
+                            "ProductionQty": 0,
+                            "owed": 48.0
+                        },
+                        {
+                            "LASTSizeCode": 8.000,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 8.500,
+                            "AssignQtyPairs": 54.0,
+                            "ProductionQty": 0,
+                            "owed": 54.0
+                        },
+                        {
+                            "LASTSizeCode": 9.000,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 9.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 10.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 10.500,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.000,
+                            "AssignQtyPairs": 150.0,
+                            "ProductionQty": 0,
+                            "owed": 150.0
+                        },
+                        {
+                            "LASTSizeCode": 11.500,
+                            "AssignQtyPairs": 78.0,
+                            "ProductionQty": 0,
+                            "owed": 78.0
+                        },
+                        {
+                            "LASTSizeCode": 12.000,
+                            "AssignQtyPairs": 96.0,
+                            "ProductionQty": 0,
+                            "owed": 96.0
+                        },
+                        {
+                            "LASTSizeCode": 13.000,
+                            "AssignQtyPairs": 72.0,
+                            "ProductionQty": 0,
+                            "owed": 72.0
+                        },
+                        {
+                            "LASTSizeCode": 14.000,
+                            "AssignQtyPairs": 24.0,
+                            "ProductionQty": 0,
+                            "owed": 24.0
+                        },
+                        {
+                            "LASTSizeCode": 15.000,
+                            "AssignQtyPairs": 18.0,
+                            "ProductionQty": 0,
+                            "owed": 18.0
+                        },
+                        {
+                            "LASTSizeCode": 16.000,
+                            "AssignQtyPairs": 12.0,
+                            "ProductionQty": 0,
+                            "owed": 12.0
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "addtr1": {
+        "Data": {
+            "grid2": [{
+                "LASTSizeCode": 24.500,
+                "AssignQtyPairs": 20.0,
+                "need": 20.0
+            }, {
+                "LASTSizeCode": 25.000,
+                "AssignQtyPairs": 90.0,
+                "need": 90.0
+            }, {
+                "LASTSizeCode": 25.500,
+                "AssignQtyPairs": 150.0,
+                "need": 150.0
+            }, {
+                "LASTSizeCode": 26.000,
+                "AssignQtyPairs": 200.0,
+                "need": 200.0
+            }, {
+                "LASTSizeCode": 26.500,
+                "AssignQtyPairs": 260.0,
+                "need": 260.0
+            }, {
+                "LASTSizeCode": 27.000,
+                "AssignQtyPairs": 220.0,
+                "need": 220.0
+            }, {
+                "LASTSizeCode": 27.500,
+                "AssignQtyPairs": 80.0,
+                "need": 80.0
+            }, {
+                "LASTSizeCode": 28.000,
+                "AssignQtyPairs": 160.0,
+                "need": 160.0
+            }, {
+                "LASTSizeCode": 29.000,
+                "AssignQtyPairs": 20.0,
+                "need": 20.0
+            }],
+            "grid3": [{
+                    "MaterialID": "310100018",
+                    "MateriaName": "",
+                    "StruNo": "1101",
+                    "StruName": "鞋頭補強"
+                },
+                {
+                    "MaterialID": "310100018",
+                    "MateriaName": "",
+                    "StruNo": "1101",
+                    "StruName": "後跟補強內腰"
+                }, {
+                    "MaterialID": "310100018",
+                    "MateriaName": "",
+                    "StruNo": "1101",
+                    "StruName": "後跟補強外腰"
+                }
+            ]
+        }
+    }
+}

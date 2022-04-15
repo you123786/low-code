@@ -60,7 +60,7 @@
                     "WorkNo": "MW22020149",
                     "ItemNO": "02",
                     "SalesNoteNO": "WAS-212441",
-                    "AssignQtyPairs": 1200.00,
+                    "AssignQtyPairs": 1116.00,
                     "PatternNO": "AGSBN05A10",
                     "allFinish": 0,
                     "allSubQty": 0,
@@ -132,159 +132,20 @@
     "tr1": {
         "Data": {
             "grid1": [{
-                    "Fpart": "鞋面半成品",
-                    "AssignQtyPairs": 1200.00,
-                    "allFinish": 1150.00,
-                    "allSubQty": 50.0,
-                    "detail": [{
-                        "SizeCode": 24.500,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 20.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.000,
-                        "AssignQtyPairs": 90.0,
-                        "ProductionQty": 90.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.500,
-                        "AssignQtyPairs": 150.0,
-                        "ProductionQty": 150.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.000,
-                        "AssignQtyPairs": 200.0,
-                        "ProductionQty": 200.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.500,
-                        "AssignQtyPairs": 260.0,
-                        "ProductionQty": 260.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.000,
-                        "AssignQtyPairs": 220.0,
-                        "ProductionQty": 220.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.500,
-                        "AssignQtyPairs": 80.0,
-                        "ProductionQty": 80.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 28.000,
-                        "AssignQtyPairs": 160.0,
-                        "ProductionQty": 130.0,
-                        "SubQty": 30.0
-                    }, {
-                        "SizeCode": 29.000,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 0,
-                        "SubQty": 20
-                    }]
+                    "SeqNo": "1",
+                    "aDate": "2022-04-12",
+                    "ProductionQty": 20.0,
+                    "allSubQty": 2.0,
+                    "tStatus": 0,
+                    "mUserName": "Vicky"
                 },
                 {
-                    "Fpart": "鞋墊半成品",
-                    "AssignQtyPairs": 1200.00,
-                    "allFinish": 1200,
-                    "allSubQty": 0.00,
-                    "detail": [{
-                        "SizeCode": 24.500,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 20.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.000,
-                        "AssignQtyPairs": 90.0,
-                        "ProductionQty": 90.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.500,
-                        "AssignQtyPairs": 150.0,
-                        "ProductionQty": 150.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.000,
-                        "AssignQtyPairs": 200.0,
-                        "ProductionQty": 200.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.500,
-                        "AssignQtyPairs": 260.0,
-                        "ProductionQty": 260.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.000,
-                        "AssignQtyPairs": 220.0,
-                        "ProductionQty": 220.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.500,
-                        "AssignQtyPairs": 80.0,
-                        "ProductionQty": 80.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 28.000,
-                        "AssignQtyPairs": 160.0,
-                        "ProductionQty": 160.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 29.000,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 20.0,
-                        "SubQty": 0
-                    }]
-                }, {
-                    "Fpart": "中底半成品",
-                    "AssignQtyPairs": 1200.00,
-                    "allFinish": 1200,
-                    "allSubQty": 0.00,
-                    "detail": [{
-                        "SizeCode": 24.500,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 20.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.000,
-                        "AssignQtyPairs": 90.0,
-                        "ProductionQty": 90.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 25.500,
-                        "AssignQtyPairs": 150.0,
-                        "ProductionQty": 150.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.000,
-                        "AssignQtyPairs": 200.0,
-                        "ProductionQty": 200.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 26.500,
-                        "AssignQtyPairs": 260.0,
-                        "ProductionQty": 260.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.000,
-                        "AssignQtyPairs": 220.0,
-                        "ProductionQty": 220.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 27.500,
-                        "AssignQtyPairs": 80.0,
-                        "ProductionQty": 80.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 28.000,
-                        "AssignQtyPairs": 160.0,
-                        "ProductionQty": 160.0,
-                        "SubQty": 0
-                    }, {
-                        "SizeCode": 29.000,
-                        "AssignQtyPairs": 20.0,
-                        "ProductionQty": 20.0,
-                        "SubQty": 0
-                    }]
+                    "SeqNo": "2",
+                    "aDate": "2022-04-12",
+                    "ProductionQty": 20.0,
+                    "allSubQty": 0,
+                    "tStatus": 0,
+                    "mUserName": "Vicky"
                 }
             ]
         }

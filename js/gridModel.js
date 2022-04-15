@@ -59,7 +59,7 @@ async function gridsFun(url, data, gridID, callback = () => {}) {
                     let tdContent = data[event.dataset.field];
                     if (event.dataset.field == 'template') {
                         event.querySelectorAll("div[data-item] >*").forEach(item => {
-                            if (item.querySelector('[data-field]') != null & typeof item.querySelector('[data-field]') !== "undefined") {
+                            if (typeof item.querySelector('[data-field]') !== "undefined") {
                                 if (item.tagName.toLowerCase() === "input")
                                     item.setAttribute("value", data[item.dataset.field]);
                                 else
